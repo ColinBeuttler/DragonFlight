@@ -19,10 +19,13 @@ public class Dragon {
     }
 
     public void setName(String name) {
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Name cannot be null or blank");
+        }
         this.name = name;
     }
 
     public String toString() {
-        return "You will be riding " + this.name;
+        return "\n\tYou will be riding " + this.name + "\n";
     }
 }
