@@ -52,6 +52,6 @@ public class Dragon {
     }
 
     public String toString() {
-        return "\n\tYou will be riding " + this.name + "\n";
+        return "\n\tLooks like a " + this.name + "\n";
     }
 }

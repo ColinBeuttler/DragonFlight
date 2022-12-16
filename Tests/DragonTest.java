@@ -1,8 +1,11 @@
 package Tests;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import models.Dragon;
+import models.Dragon.Gender;
 
 public class DragonTest {
 
@@ -11,10 +14,11 @@ public class DragonTest {
     @Before
     public void setup() {
         dragon = new Dragon("Gore Magala");
-    }
+        dragon.setGender(Gender.FEMALE);
+    }  
     
     @Test
     public void dragonTest() {
-        System.out.println(dragon.getGender());
+        assertEquals(Gender.FEMALE, dragon.getGender());
     }
 }
