@@ -25,9 +25,12 @@ public class DragonsList {
         return true;
     }
 
-    public int assignDragon() {
-        double ranDragon = Math.random() * dragons.size();
-        return (int) ranDragon;
+    public Dragon assignDragon() {
+        if (dragons.isEmpty()) {
+            return null;
+        }
+        int ranDragon = (int) Math.random() * dragons.size();
+        return dragons.get(ranDragon);
     }
 
     public String toString(int index) {

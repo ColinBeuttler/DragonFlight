@@ -69,9 +69,9 @@ public class Main {
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         } finally {
-
+            Dragon dragonHatchling = dragons.assignDragon();
             System.out.println(DragonPrint.printBaby());
-            System.out.print(dragons.toString(dragons.assignDragon()));
+            System.out.print(dragonHatchling);
         }
 
         scan.close();
@@ -84,7 +84,6 @@ public class Main {
         FileInputStream fis = new FileInputStream(txt);
         Scanner scanFile = new Scanner(fis);
 
-        ArrayList<Dragon> dragons = new ArrayList<Dragon>();
         // Adds the lines of the dragon file to the ArrayList Dragons
         while (scanFile.hasNextLine()) {
             String[] names = scanFile.nextLine().split(",");
