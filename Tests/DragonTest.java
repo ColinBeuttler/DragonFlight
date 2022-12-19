@@ -14,7 +14,8 @@ public class DragonTest {
 
     @Before
     public void setup() {
-
+        dragon = new Dragon("Gore Magala");
+        dragon.setGender(Gender.FEMALE);
     }
 
     @Test
@@ -22,8 +23,8 @@ public class DragonTest {
         assertEquals(Gender.FEMALE, dragon.getGender());
     }
 
-    @Test
-    public void assignTest() {
-
-    }
+    // @Test
+    // public void assignDragonTest(){
+    // assertEquals("Gore Magala", dragons.assignDragon());
+    // }
 }

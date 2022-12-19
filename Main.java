@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import Prints.DragonPrint;
 import models.Dragon;
 import models.DragonsList;
+import models.Dragon.Gender;
 
 import java.io.FileInputStream;
 
@@ -74,6 +75,7 @@ public class Main {
         } finally {
             Dragon dragonHatchling = dragons.assignDragon();
             System.out.println(DragonPrint.printBaby());
+            System.out.println(genderMessage(dragonHatchling));
             System.out.print(dragonHatchling);
         }
 
@@ -95,6 +97,15 @@ public class Main {
             }
         }
         scanFile.close();
+    }
+
+    public static String genderMessage(Dragon hatchling) {
+        if (hatchling.getGender().equals(Gender.FEMALE)) {
+            return "\n\tIt's a girl";
+        } else if (hatchling.getGender().equals(Gender.MALE)) {
+            return "\n\tIt's a boy";
+        }
+        return null;
     }
 
     // Method that returns dialogue fillers for pauses in the conversation

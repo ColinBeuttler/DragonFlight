@@ -45,8 +45,7 @@ public class Dragon {
         int gender = (int) Math.round(Math.random());
         if (gender < 1) {
             return Gender.FEMALE;
-        }
-        else {
+        } else {
             return Gender.MALE;
         }
     }
