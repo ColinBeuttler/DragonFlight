@@ -1,5 +1,4 @@
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -27,26 +26,26 @@ public class Main {
         wait(1);
         System.out.println("\n\tFinally awake I see....");
 
-        wait(1);
+        wait(2);
         System.out.println("\n\tNow where were we?");
+        wait(1);
         waitMessage(2);
         System.out.println("\n\t...Oh yes that's right!!!");
-        wait(1);
+        wait(2);
         System.out.println("\n\tYou were about to pick a dragon egg...");
-        wait(1);
+        wait(2);
         System.out.println("\n\tDid you make a decision yet?");
         wait(1);
         System.out.println("\n\tY/N?");
 
         String ans = scan.nextLine();
 
-        if (!(ans.equalsIgnoreCase("y"))) {
+        while (!(ans.equalsIgnoreCase("y"))) {
             System.out.println("\n\tNeed more time then?");
             wait(1);
             System.out.println("\n\tor should i pick for you?");
         }
 
-        waitMessage(1);
         System.out.println("\n\tThis egg look good?");
         wait(1);
         System.out.println("\n\tY/N?");
@@ -63,8 +62,9 @@ public class Main {
             res = scan.nextLine();
         }
 
-        waitMessage(3);
+        waitMessage(1);
         System.out.println("\n\tI think it's hatching...");
+        wait(3);
 
         // Runs the Methods after an egg is picked
         try {
@@ -111,6 +111,11 @@ public class Main {
     // Method that returns dialogue fillers for pauses in the conversation
     public static void waitMessage(int sec) {
         switch (sec) {
+            case 1: {
+                System.out.println("\n\tWWHHHAAATTTT!!!");
+                wait(sec);
+                break;
+            }
             case 2: {
                 System.out.println("\n\thmmmm...\n");
                 wait(sec);
