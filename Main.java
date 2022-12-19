@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -61,10 +62,10 @@ public class Main {
         waitMessage(3);
         System.out.println("\n\tI think it's hatching...");
 
-
-// Runs the Methods after an egg is picked
+        // Runs the Methods after an egg is picked
         try {
             readDragons("dragons.txt");
+
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         } finally {
@@ -75,15 +76,15 @@ public class Main {
 
         scan.close();
     }
-    
 
-// ///////////////////////////////////Method Section
+    // ///////////////////////////////////Method Section
 
-    // Read the dragon file 
+    // Read the dragon file
     public static void readDragons(String txt) throws FileNotFoundException {
         FileInputStream fis = new FileInputStream(txt);
         Scanner scanFile = new Scanner(fis);
 
+        ArrayList<Dragon> dragons = new ArrayList<Dragon>();
         // Adds the lines of the dragon file to the ArrayList Dragons
         while (scanFile.hasNextLine()) {
             String[] names = scanFile.nextLine().split(",");
@@ -94,44 +95,39 @@ public class Main {
         scanFile.close();
     }
 
-
-
-// Method that returns dialogue fillers for pauses in the conversation
-public static void waitMessage(int sec) {
-    switch (sec) {
-        case 2: {
-            System.out.println("\n\thmmmm...\n");
-            wait(sec);
-            break;
-        }
-        case 3: {
-            System.out.println("\n\tHold on...\n");
-            wait(sec);
-            break;
-        }
-        case 5: {
-            System.out.println("\n\tHope you don't want an answer before sundown hahahaha.....\n");
-            wait(4);
-            System.out.println("\tJk\n");
-            wait(1);
-            break;
-        }
-        default: {
-            System.out.println("\n\tThis may take a few minutes...\n");
-            wait(sec);
+    // Method that returns dialogue fillers for pauses in the conversation
+    public static void waitMessage(int sec) {
+        switch (sec) {
+            case 2: {
+                System.out.println("\n\thmmmm...\n");
+                wait(sec);
+                break;
+            }
+            case 3: {
+                System.out.println("\n\tHold on...\n");
+                wait(sec);
+                break;
+            }
+            case 5: {
+                System.out.println("\n\tHope you don't want an answer before sundown hahahaha.....\n");
+                wait(4);
+                System.out.println("\tJk\n");
+                wait(1);
+                break;
+            }
+            default: {
+                System.out.println("\n\tThis may take a few minutes...\n");
+                wait(sec);
+            }
         }
     }
-}
 
-
-
-// Method that creates the converation pauses
+    // Method that creates the converation pauses
 
     public static void wait(int sec) {
         try {
             TimeUnit.SECONDS.sleep(sec);
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
             System.out.println(e.getMessage());
         }
     }
