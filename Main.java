@@ -14,14 +14,17 @@ public class Main {
     static DragonsList dragons = new DragonsList();
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("\n\tWelcome to Dragon Quest");
+        System.out.println("\n\tPress ENTER to continue");
+        scan.nextLine();
 
         // System.out.print(DragonPrint.dragonPrint());
 
         System.out.println("\n\tGood Morning");
         wait(1);
         System.out.println("\n\tFinally awake I see....");
-
-        Scanner scan = new Scanner(System.in);
 
         wait(1);
         System.out.println("\n\tNow where were we?");
