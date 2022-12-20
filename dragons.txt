@@ -1,1 +1,10 @@
-Rathalos, Astalos, Bazelgeuse, Legiana, Espinas, Seregios, Fatalis, Kushala Daora, Alatreon, Gore Magala, Valstrax, Malzeno, Namielle, Nergigante, Shara Ishvalda, Vaal Hazak, Velkhana, Xeno'jiiva, Safi'jiiva, Gogmazios, Gravios
+Fatalis, BEHEMOTH
+Gore Magala, WYRM
+Valstrax, WYRM
+Malzeno, WYRM
+Namielle, FAE
+Shara Ishvalda, FAE
+Velkhana, FAE
+Xeno'jiiva, BEHEMOTH
+Safi'jiiva, BEHEMOTH
+Gogmazios, BEHEMOTH

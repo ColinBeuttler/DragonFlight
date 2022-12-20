@@ -5,25 +5,32 @@ public class Dragon {
     public enum Gender {
         MALE, FEMALE
     }
-
+    
+    private String type;
     private String name;
     private Gender gender;
 
-    public Dragon(String name) {
+    public Dragon(String name, String type) {
         if (name == null || name.isBlank()) {
             throw new IllegalArgumentException("Name cannot be null or blank");
         }
         this.name = name;
+        this.type = type;
         this.gender = determineGender();
     }
 
     public Dragon(Dragon source) {
         this.name = source.name;
+        this.type = source.type;
         this.gender = source.gender;
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getType() {
+        return type;
     }
 
     public Gender getGender() {
@@ -35,6 +42,10 @@ public class Dragon {
             throw new IllegalArgumentException("Name cannot be null or blank");
         }
         this.name = name;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public void setGender(Gender gender) {

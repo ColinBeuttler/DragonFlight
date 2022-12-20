@@ -8,13 +8,14 @@ import org.junit.Test;
 import models.Dragon;
 import models.Dragon.Gender;
 
+
 public class DragonTest {
 
     Dragon dragon;
 
     @Before
     public void setup() {
-        dragon = new Dragon("Gore Magala");
+        dragon = new Dragon("Gore Magala", "WYRM");
         dragon.setGender(Gender.FEMALE);
     }
 

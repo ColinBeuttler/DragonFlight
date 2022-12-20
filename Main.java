@@ -2,6 +2,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+
 import Prints.DragonPrint;
 import models.Dragon;
 import models.DragonsList;
@@ -40,7 +41,7 @@ public class Main {
 
         String ans = scan.nextLine();
 
-        while (!(ans.equalsIgnoreCase("y"))) {
+        if (!(ans.equalsIgnoreCase("y"))) {
             System.out.println("\n\tNeed more time then?");
             wait(1);
             System.out.println("\n\tor should i pick for you?");
@@ -52,7 +53,7 @@ public class Main {
 
         String res = scan.nextLine();
 
-        while (!(res.equalsIgnoreCase("y"))) {
+        if (!(res.equalsIgnoreCase("y"))) {
             System.out.println("\n\tAnother on then?");
             scan.nextLine();
             waitMessage(2);
@@ -91,9 +92,9 @@ public class Main {
 
         // Adds the lines of the dragon file to the ArrayList Dragons
         while (scanFile.hasNextLine()) {
-            String[] names = scanFile.nextLine().split(",");
-            for (int i = 0; i < names.length; i++) {
-                dragons.add(new Dragon(names[i]));
+            String[] list = scanFile.nextLine().split(",");
+            for (int i = 0; i < list.length; i++) {
+                dragons.add(new Dragon(list[0], list[1]));   
             }
         }
         scanFile.close();
