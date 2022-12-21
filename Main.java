@@ -30,7 +30,6 @@ public class Main {
         System.out.println("\n\tGood Morning");
         wait(1);
         System.out.println("\n\tFinally awake I see....");
-
         wait(2);
         System.out.println("\n\tNow where were we?");
         wait(1);
@@ -62,11 +61,8 @@ public class Main {
            ArrayList<Dragon> dragons = readDragons();
             createList(dragons);
             Dragon dragonHatchling = dragonList.getDragon(dragonList.assignDragon());
-
             eggMessage(dragonHatchling);
-
             System.out.println("\n\tY/N?");
-
             String res = scan.nextLine();
 
             // If they want to repick
@@ -88,11 +84,8 @@ public class Main {
             System.out.println("\n\tI think it's hatching...");
             wait(3);
 
-
             System.out.println(DragonPrint.printBaby());
-
             System.out.println(genderMessage(dragonHatchling));
-
             System.out.print(dragonHatchling);
 
         } 
