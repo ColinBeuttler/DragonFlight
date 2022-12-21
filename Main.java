@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -13,7 +14,9 @@ import java.io.FileInputStream;
 
 public class Main {
 
-    static DragonsList dragons = new DragonsList();
+    static String DRAGONS_FILE = "dragons.txt";
+
+    static DragonsList dragonList = new DragonsList();
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -56,9 +59,9 @@ public class Main {
         System.out.println("\n\tYou stare deep into the egg...");
     
         try {
-            readDragons("dragons.txt");
-
-            Dragon dragonHatchling = dragons.assignDragon();
+           ArrayList<Dragon> dragons = readDragons();
+            createList(dragons);
+            Dragon dragonHatchling = dragonList.getDragon(dragonList.assignDragon());
 
             eggMessage(dragonHatchling);
 
@@ -72,7 +75,7 @@ public class Main {
                 System.out.println("\n\tAnother one then?");
                 waitMessage(2);
                 System.out.println("\n\tHow about this one?");
-                dragonHatchling = dragons.assignDragon();
+                dragonHatchling = dragonList.getDragon(dragonList.assignDragon());
                 wait(1);
                 System.out.println("\n\tYou stare deep into this new egg placed in front of you...");
                 wait(1);
@@ -103,17 +106,25 @@ public class Main {
     // ///////////////////////////////////Method Section
 
     // Read the dragon file
-    public static void readDragons(String txt) throws FileNotFoundException {
-        FileInputStream fis = new FileInputStream(txt);
+    public static ArrayList<Dragon> readDragons() throws FileNotFoundException {
+        FileInputStream fis = new FileInputStream(DRAGONS_FILE);
         Scanner scanFile = new Scanner(fis);
 
         // Adds the lines of the dragon file to the ArrayList Dragons
+        ArrayList<Dragon> dragons = new ArrayList<Dragon>();
         while (scanFile.hasNextLine()) {
             String[] list = scanFile.nextLine().split(",");
-                dragons.add(new Dragon(list[0], Type.valueOf(list[1])));
-            
+            dragons.add(new Dragon(list[0], Type.valueOf(list[1])));
+
         }
         scanFile.close();
+        return dragons;
+    }
+    
+    public static void createList(ArrayList<Dragon> dragons) {
+        for (Dragon dragon : dragons) {
+            dragonList.addDragon(dragon);
+        }
     }
     
     public static void eggMessage(Dragon dragon) {

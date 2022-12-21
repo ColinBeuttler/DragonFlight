@@ -3,7 +3,7 @@ package models;
 import java.util.ArrayList;
 
 public class DragonsList {
-    ArrayList<Dragon> dragons;
+    private ArrayList<Dragon> dragons;
 
     public DragonsList() {
         this.dragons = new ArrayList<Dragon>();
@@ -17,20 +17,16 @@ public class DragonsList {
         this.dragons.set(index, new Dragon(dragon));
     }
 
-    public boolean add(Dragon dragon) {
+    public void addDragon(Dragon dragon) {
         if (this.dragons.contains(dragon)) {
-            return false;
+            return;
         }
         this.dragons.add(new Dragon(dragon));
-        return true;
     }
 
-    public Dragon assignDragon() {
-        if (dragons.isEmpty()) {
-            return null;
-        }
-        int ranDragon = (int) Math.random() * dragons.size();
-        return dragons.get(ranDragon);
+    public int assignDragon() {
+        double ranDragon = Math.random() * dragons.size();
+        return (int) ranDragon;
     }
 
     public String toString(int index) {
