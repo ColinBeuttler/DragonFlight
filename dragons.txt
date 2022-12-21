@@ -1,10 +1,10 @@
-Fatalis, BEHEMOTH
-Gore Magala, WYRM
-Valstrax, WYRM
-Malzeno, WYRM
-Namielle, FAE
-Shara Ishvalda, FAE
-Velkhana, FAE
-Xeno'jiiva, BEHEMOTH
-Safi'jiiva, BEHEMOTH
-Gogmazios, BEHEMOTH
+Fatalis,BEHEMOTH
+Gore Magala,WYRM
+Valstrax,WYRM
+Malzeno,WYRM
+Namielle,FAE
+Shara Ishvalda,FAE
+Velkhana,FAE
+Xeno'jiiva,BEHEMOTH
+Safi'jiiva,BEHEMOTH
+Gogmazios,BEHEMOTH

@@ -2,6 +2,8 @@ package Tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.lang.ProcessBuilder.Redirect.Type;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,7 +17,7 @@ public class DragonTest {
 
     @Before
     public void setup() {
-        dragon = new Dragon("Gore Magala", "WYRM");
+        dragon = new Dragon("Gore Magala", Dragon.Type.WYRM);
         dragon.setGender(Gender.FEMALE);
     }
 

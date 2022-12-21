@@ -1,16 +1,22 @@
 package models;
 
+import java.util.Objects;
+
 public class Dragon {
 
     public enum Gender {
         MALE, FEMALE
     }
+
+    public enum Type {
+        BEHEMOTH, WYRM, FAE
+    }
     
-    private String type;
+    private Type type;
     private String name;
     private Gender gender;
 
-    public Dragon(String name, String type) {
+    public Dragon(String name, Type type) {
         if (name == null || name.isBlank()) {
             throw new IllegalArgumentException("Name cannot be null or blank");
         }
@@ -29,7 +35,7 @@ public class Dragon {
         return name;
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
@@ -44,7 +50,7 @@ public class Dragon {
         this.name = name;
     }
 
-    public void setType(String type) {
+    public void setType(Type type) {
         this.type = type;
     }
 
@@ -59,6 +65,23 @@ public class Dragon {
         } else {
             return Gender.MALE;
         }
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this)
+            return true;
+        if (!(obj instanceof Dragon)) {
+            return false;
+        }
+        Dragon dragon = (Dragon) obj;
+        return Objects.equals(name, dragon.name) && Objects.equals(type, dragon.type)
+                && Objects.equals(gender, dragon.gender);
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, type, gender);
     }
 
     public String toString() {

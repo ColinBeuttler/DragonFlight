@@ -7,6 +7,7 @@ import Prints.DragonPrint;
 import models.Dragon;
 import models.DragonsList;
 import models.Dragon.Gender;
+import models.Dragon.Type;
 
 import java.io.FileInputStream;
 
@@ -17,7 +18,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("\n\tWelcome to Dragon Quest");
+        System.out.println("\n\tWelcome to Dragon Flight");
         System.out.println("\n\tPress ENTER to continue");
         scan.nextLine();
 
@@ -41,43 +42,59 @@ public class Main {
 
         String ans = scan.nextLine();
 
+        // If they aren't ready to a pick an egg
+
         if (!(ans.equalsIgnoreCase("y"))) {
-            System.out.println("\n\tNeed more time then?");
-            wait(1);
-            System.out.println("\n\tor should i pick for you?");
+            System.out.println("\n\tNeed more time...");
+            wait(2);
+            System.out.println("\n\tor should I pick for you?");
+            waitMessage(3);
         }
 
         System.out.println("\n\tThis egg look good?");
         wait(1);
-        System.out.println("\n\tY/N?");
-
-        String res = scan.nextLine();
-
-        if (!(res.equalsIgnoreCase("y"))) {
-            System.out.println("\n\tAnother on then?");
-            scan.nextLine();
-            waitMessage(2);
-            System.out.println("\n\tHow about this one?");
-            wait(1);
-            System.out.println("\n\tY/N?");
-            res = scan.nextLine();
-        }
-
-        waitMessage(1);
-        System.out.println("\n\tI think it's hatching...");
-        wait(3);
-
-        // Runs the Methods after an egg is picked
+        System.out.println("\n\tYou stare deep into the egg...");
+    
         try {
             readDragons("dragons.txt");
 
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
-        } finally {
             Dragon dragonHatchling = dragons.assignDragon();
+
+            eggMessage(dragonHatchling);
+
+            System.out.println("\n\tY/N?");
+
+            String res = scan.nextLine();
+
+            // If they want to repick
+
+            while (!(res.equalsIgnoreCase("y"))) {
+                System.out.println("\n\tAnother one then?");
+                waitMessage(2);
+                System.out.println("\n\tHow about this one?");
+                dragonHatchling = dragons.assignDragon();
+                wait(1);
+                System.out.println("\n\tYou stare deep into this new egg placed in front of you...");
+                wait(1);
+                eggMessage(dragonHatchling);
+                System.out.println("\n\tY/N?");
+                res = scan.nextLine();
+            }
+
+            waitMessage(1);
+            System.out.println("\n\tI think it's hatching...");
+            wait(3);
+
+
             System.out.println(DragonPrint.printBaby());
+
             System.out.println(genderMessage(dragonHatchling));
+
             System.out.print(dragonHatchling);
+
+        } 
+        catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
         }
 
         scan.close();
@@ -93,11 +110,34 @@ public class Main {
         // Adds the lines of the dragon file to the ArrayList Dragons
         while (scanFile.hasNextLine()) {
             String[] list = scanFile.nextLine().split(",");
-            for (int i = 0; i < list.length; i++) {
-                dragons.add(new Dragon(list[0], list[1]));   
-            }
+                dragons.add(new Dragon(list[0], Type.valueOf(list[1])));
+            
         }
         scanFile.close();
+    }
+    
+    public static void eggMessage(Dragon dragon) {
+        if (dragon.getType().equals(Type.BEHEMOTH)) {
+            wait(1);
+            System.out.println(
+                    "\n\t...within the egg's great deeps you sense a cold iron will akin to the sturdy nature of the mountain Dwarves.");
+            wait(2);
+        }
+        else if (dragon.getType().equals(Type.WYRM)) {
+            wait(1);
+            System.out.println("\n\t...within the egg, you see a fathomless glow dancing within, kindred to the graceful speed of the Forest Elves.");
+            wait(2);
+        }
+        else if (dragon.getType().equals(Type.FAE)) {
+            wait(1);
+            System.out.println(
+                    "\n\t...within the egg, you sense both calm and ferocity. A brilliant interior with veiled edges constantly moving just like a rising tide.");
+            wait(2);
+        }
+        else {
+            System.out.println("\n\tType not specified");
+        }
+    
     }
 
     public static String genderMessage(Dragon hatchling) {
@@ -123,14 +163,15 @@ public class Main {
                 break;
             }
             case 3: {
+                wait(1);
                 System.out.println("\n\tHold on...\n");
-                wait(sec);
+                wait(2);
                 break;
             }
             case 5: {
                 System.out.println("\n\tHope you don't want an answer before sundown hahahaha.....\n");
                 wait(4);
-                System.out.println("\tJk\n");
+                System.out.println("\tJk ;)\n");
                 wait(1);
                 break;
             }
