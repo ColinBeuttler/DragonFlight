@@ -53,7 +53,7 @@ public class Main {
             waitMessage(3);
         }
 
-        System.out.println("\n\tThis egg look good?");
+        System.out.println("\n\tThis egg look  ?");
         wait(1);
         System.out.println("\n\tYou stare deep into the egg...");
     
