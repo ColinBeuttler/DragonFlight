@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-
 import Prints.DragonPrint;
 import models.Dragon;
 import models.DragonsList;
@@ -53,12 +52,12 @@ public class Main {
             waitMessage(3);
         }
 
-        System.out.println("\n\tThis egg look  ?");
+        System.out.println("\n\tThis egg look good?");
         wait(1);
         System.out.println("\n\tYou stare deep into the egg...");
-    
+
         try {
-           ArrayList<Dragon> dragons = readDragons();
+            ArrayList<Dragon> dragons = readDragons();
             createList(dragons);
             Dragon dragonHatchling = dragonList.getDragon(dragonList.assignDragon());
             eggMessage(dragonHatchling);
@@ -88,8 +87,7 @@ public class Main {
             System.out.println(genderMessage(dragonHatchling));
             System.out.print(dragonHatchling);
 
-        } 
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         }
 
@@ -113,35 +111,33 @@ public class Main {
         scanFile.close();
         return dragons;
     }
-    
+
     public static void createList(ArrayList<Dragon> dragons) {
         for (Dragon dragon : dragons) {
             dragonList.addDragon(dragon);
         }
     }
-    
+
     public static void eggMessage(Dragon dragon) {
         if (dragon.getType().equals(Type.BEHEMOTH)) {
             wait(1);
             System.out.println(
                     "\n\t...within the egg's great deeps you sense a cold iron will akin to the sturdy nature of the mountain Dwarves.");
             wait(2);
-        }
-        else if (dragon.getType().equals(Type.WYRM)) {
+        } else if (dragon.getType().equals(Type.WYRM)) {
             wait(1);
-            System.out.println("\n\t...within the egg, you see a fathomless glow dancing within, kindred to the graceful speed of the Forest Elves.");
+            System.out.println(
+                    "\n\t...within the egg, you see a fathomless glow dancing within, kindred to the graceful speed of the Forest Elves.");
             wait(2);
-        }
-        else if (dragon.getType().equals(Type.FAE)) {
+        } else if (dragon.getType().equals(Type.FAE)) {
             wait(1);
             System.out.println(
                     "\n\t...within the egg, you sense both calm and ferocity. A brilliant interior with veiled edges constantly moving just like a rising tide.");
             wait(2);
-        }
-        else {
+        } else {
             System.out.println("\n\tType not specified");
         }
-    
+
     }
 
     public static String genderMessage(Dragon hatchling) {
