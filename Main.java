@@ -122,17 +122,17 @@ public class Main {
         if (dragon.getType().equals(Type.BEHEMOTH)) {
             wait(1);
             System.out.println(
-                    "\n\t...within the egg's great deeps you sense a cold iron will akin to the sturdy nature of the mountain Dwarves.");
+                    "\n\t...within the egg's great deeps you sense a cold iron will akin to the sturdy nature of a mountain.");
             wait(2);
         } else if (dragon.getType().equals(Type.WYRM)) {
             wait(1);
             System.out.println(
-                    "\n\t...within the egg, you see a fathomless glow dancing within, kindred to the graceful speed of the Forest Elves.");
+                    "\n\t...within the egg, you see a fathomless glow dancing within, kindred to the graceful speed of a firefly.");
             wait(2);
         } else if (dragon.getType().equals(Type.FAE)) {
             wait(1);
             System.out.println(
-                    "\n\t...within the egg, you sense both calm and ferocity. A brilliant interior with veiled edges constantly moving just like a rising tide.");
+                    "\n\t...within the egg, you sense both calm and ferocity. A brilliant interior with veiled edges constantly moving like a swilrling typhoon.");
             wait(2);
         } else {
             System.out.println("\n\tType not specified");
