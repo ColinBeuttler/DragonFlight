@@ -59,7 +59,9 @@ public class Main {
             ArrayList<Dragon> dragons = readDragons();
             createList(dragons);
             Dragon dragonHatchling = dragonList.getDragon(dragonList.assignDragon());
-            eggMessage(dragonHatchling);
+            wait(1);
+            Dragon.eggMessage(dragonHatchling);
+            wait(2);
             System.out.println("\n\tY/N?");
             String res = scan.nextLine();
 
@@ -72,8 +74,9 @@ public class Main {
                 dragonHatchling = dragonList.getDragon(dragonList.assignDragon());
                 wait(1);
                 System.out.println("\n\tYou stare deep into this new egg placed in front of you...");
-                wait(1);
-                eggMessage(dragonHatchling);
+                wait(2);
+                Dragon.eggMessage(dragonHatchling);
+                wait(2);
                 System.out.println("\n\tY/N?");
                 res = scan.nextLine();
             }
@@ -116,29 +119,6 @@ public class Main {
             dragonList.addDragon(dragon);
         } 
     }
-
-    public static void eggMessage(Dragon dragon) {
-        if (dragon.getType().equals(Type.BEHEMOTH)) {
-            wait(1);
-            System.out.println(
-                    "\n\t...within the egg's great deeps you sense a cold fathomless light, akin to the endless depths of the tunnels dug by the Mountain Dwarves.");
-            wait(2);
-        } else if (dragon.getType().equals(Type.WYRM)) {
-            wait(1);
-            System.out.println(
-                    "\n\t...within the egg, you see a radiant glow dancing within, both fast and graceful.");
-            wait(2);
-        } else if (dragon.getType().equals(Type.FAE)) {
-            wait(1);
-            System.out.println(
-                    "\n\t...within the egg, you sense both calm and ferocity. A brilliant interior with veiled edges constantly moving like a swilrling typhoon.");
-            wait(2);
-        } else {
-            System.out.println("\n\tType not specified");
-        }
-
-    }
-
 
     // Method that returns dialogue fillers for pauses in the conversation
     public static void waitMessage(int sec) {

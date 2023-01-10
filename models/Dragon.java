@@ -76,6 +76,22 @@ public class Dragon {
         return null;
     }
 
+    public static void eggMessage(Dragon dragon) {
+        if (dragon.getType().equals(Type.BEHEMOTH)) {
+            System.out.println(
+                    "\n\t...within the egg's great deeps you sense a cold fathomless light, akin to the endless depths of the tunnels dug by the Mountain Dwarves.");
+        } else if (dragon.getType().equals(Type.WYRM)) {
+            System.out.println(
+                    "\n\t...within the egg, you see a radiant glow dancing within, both fast and graceful.");
+        } else if (dragon.getType().equals(Type.FAE)) {
+            System.out.println(
+                    "\n\t...within the egg, you sense both calm and ferocity. A brilliant interior with veiled edges constantly moving like a swilrling typhoon.");
+        } else {
+            System.out.println("\n\tType not specified");
+        }
+
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj == this)
