@@ -67,6 +67,15 @@ public class Dragon {
         }
     }
 
+    public static String genderMessage(Dragon hatchling) {
+        if (hatchling.getGender().equals(Gender.FEMALE)) {
+            return "\n\tIt's a girl";
+        } else if (hatchling.getGender().equals(Gender.MALE)) {
+            return "\n\tIt's a boy";
+        }
+        return null;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj == this)

@@ -28,6 +28,7 @@ public class DragonsList {
         double ranDragon = Math.random() * dragons.size();
         return (int) ranDragon;
     }
+    
 
     public String toString(int index) {
         return dragons.get(index).toString();

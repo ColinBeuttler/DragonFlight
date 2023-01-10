@@ -3,10 +3,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-import Prints.DragonPrint;
+import Prints.*;
 import models.Dragon;
 import models.DragonsList;
-import models.Dragon.Gender;
 import models.Dragon.Type;
 
 import java.io.FileInputStream;
@@ -84,7 +83,7 @@ public class Main {
             wait(3);
 
             System.out.println(DragonPrint.printBaby());
-            System.out.println(genderMessage(dragonHatchling));
+            System.out.println(Dragon.genderMessage(dragonHatchling));
             System.out.print(dragonHatchling);
 
         } catch (FileNotFoundException e) {
@@ -115,19 +114,19 @@ public class Main {
     public static void createList(ArrayList<Dragon> dragons) {
         for (Dragon dragon : dragons) {
             dragonList.addDragon(dragon);
-        }
+        } 
     }
 
     public static void eggMessage(Dragon dragon) {
         if (dragon.getType().equals(Type.BEHEMOTH)) {
             wait(1);
             System.out.println(
-                    "\n\t...within the egg's great deeps you sense a cold iron will akin to the sturdy nature of a mountain.");
+                    "\n\t...within the egg's great deeps you sense a cold fathomless light, akin to the endless depths of the tunnels dug by the Mountain Dwarves.");
             wait(2);
         } else if (dragon.getType().equals(Type.WYRM)) {
             wait(1);
             System.out.println(
-                    "\n\t...within the egg, you see a fathomless glow dancing within, kindred to the graceful speed of a firefly.");
+                    "\n\t...within the egg, you see a radiant glow dancing within, both fast and graceful.");
             wait(2);
         } else if (dragon.getType().equals(Type.FAE)) {
             wait(1);
@@ -140,14 +139,6 @@ public class Main {
 
     }
 
-    public static String genderMessage(Dragon hatchling) {
-        if (hatchling.getGender().equals(Gender.FEMALE)) {
-            return "\n\tIt's a girl";
-        } else if (hatchling.getGender().equals(Gender.MALE)) {
-            return "\n\tIt's a boy";
-        }
-        return null;
-    }
 
     // Method that returns dialogue fillers for pauses in the conversation
     public static void waitMessage(int sec) {
