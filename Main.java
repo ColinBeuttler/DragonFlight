@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import Prints.*;
 import models.Dragon;
 import models.DragonsList;
+import models.Egg;
 import models.Dragon.Type;
 
 import java.io.FileInputStream;
@@ -81,6 +82,14 @@ public class Main {
                 res = scan.nextLine();
             }
 
+            Egg unHatchedEgg = new Egg(false, 0);
+            wait(2);
+            unHatchedEgg.careMessage();
+            String careRes = scan.nextLine();
+            wait(1);
+            unHatchedEgg.eggCare(careRes);    
+            wait(2);
+                  
             waitMessage(1);
             System.out.println("\n\tI think it's hatching...");
             wait(3);

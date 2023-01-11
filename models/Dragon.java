@@ -2,7 +2,7 @@ package models;
 
 import java.util.Objects;
 
-public class Dragon {
+public class Dragon{
 
     public enum Gender {
         MALE, FEMALE

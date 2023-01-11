@@ -2,8 +2,8 @@ package models;
 
 public class Egg {
     
-    private boolean hatched = false;
-    private int warmth = 0;
+    private boolean hatched;
+    private int warmth;
 
     public Egg(boolean hatched, int warmth) {
         this.hatched = hatched;
@@ -15,8 +15,10 @@ public class Egg {
         this.warmth = source.warmth;
     }
 
-
     public boolean isHatched() {
+        if (this.warmth < 9) {
+            setHatched(true);
+        }
         return this.hatched;
     }
 
