@@ -15,6 +15,7 @@ public class Dragon{
     private Type type;
     private String name;
     private Gender gender;
+    private double size;
 
     public Dragon(String name, Type type) {
         if (name == null || name.isBlank()) {
@@ -23,12 +24,14 @@ public class Dragon{
         this.name = name;
         this.type = type;
         this.gender = determineGender();
+        this.size = determineSize();
     }
 
     public Dragon(Dragon source) {
         this.name = source.name;
         this.type = source.type;
         this.gender = source.gender;
+        this.size = source.size;
     }
 
     public String getName() {
@@ -65,6 +68,20 @@ public class Dragon{
         } else {
             return Gender.MALE;
         }
+    }
+
+    private double determineSize() {
+        double randSize = 0.0;
+        if (this.getType().equals(Type.BEHEMOTH)) {
+            randSize = (Math.random() * (3800 - 4600) + 3800);
+        }
+        else if (this.getType().equals(Type.WYRM)) {
+            randSize = (Math.random() * (2100 - 2700) + 2100);
+        }
+        else if (this.getType().equals(Type.FAE)) {
+            randSize = (Math.random() * (1750 - 2350) + 1750);
+        }
+        return randSize;
     }
 
     public static String genderMessage(Dragon hatchling) {
