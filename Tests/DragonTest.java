@@ -2,8 +2,6 @@ package Tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.lang.ProcessBuilder.Redirect.Type;
-
 import org.junit.Before;
 import org.junit.Test;
 
