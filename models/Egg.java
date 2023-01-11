@@ -16,7 +16,7 @@ public class Egg {
     }
 
     public boolean isHatched() {
-        if (this.warmth < 9) {
+        if (this.warmth > 9) {
             setHatched(true);
         }
         return this.hatched;
@@ -71,7 +71,7 @@ public class Egg {
     }
     
     public void careMessage() {
-        System.out.println("\n\tWhat would you like to do with the Egg?");
+        System.out.println("\n\n\tWhat would you like to do with the Egg?");
         System.out.println("\n\ta) Hold the egg close to the fire.");
         System.out.println("\n\tb) Rub the egg.");
         System.out.println("\n\tc) Do nothing with the egg");

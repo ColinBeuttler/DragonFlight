@@ -77,18 +77,21 @@ public class Main {
                 System.out.println("\n\tYou stare deep into this new egg placed in front of you...");
                 wait(2);
                 Dragon.eggMessage(dragonHatchling);
-                wait(2);
+                wait(1);
                 System.out.println("\n\tY/N?");
                 res = scan.nextLine();
             }
 
             Egg unHatchedEgg = new Egg(false, 0);
-            wait(2);
-            unHatchedEgg.careMessage();
-            String careRes = scan.nextLine();
             wait(1);
-            unHatchedEgg.eggCare(careRes);    
-            wait(2);
+            while (unHatchedEgg.isHatched() == false) {
+                wait(1);
+                unHatchedEgg.careMessage();
+                String careRes = scan.nextLine();
+                wait(1);
+                unHatchedEgg.eggCare(careRes);
+                wait(1);
+            }
                   
             waitMessage(1);
             System.out.println("\n\tI think it's hatching...");
