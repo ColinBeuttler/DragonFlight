@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+import Dialogue.UponHatch;
 import Prints.*;
 import models.Dragon;
 import models.DragonsList;
@@ -61,7 +62,7 @@ public class Main {
             createList(dragons);
             Dragon dragonHatchling = dragonList.getDragon(dragonList.assignDragon());
             wait(1);
-            Dragon.eggMessage(dragonHatchling);
+            UponHatch.eggMessage(dragonHatchling);
             wait(2);
             System.out.println("\n\tY/N?");
             String res = scan.nextLine();
@@ -76,7 +77,7 @@ public class Main {
                 wait(1);
                 System.out.println("\n\tYou stare deep into this new egg placed in front of you...");
                 wait(2);
-                Dragon.eggMessage(dragonHatchling);
+                UponHatch.eggMessage(dragonHatchling);
                 wait(1);
                 System.out.println("\n\tY/N?");
                 res = scan.nextLine();
@@ -98,7 +99,7 @@ public class Main {
             wait(3);
 
             System.out.println(DragonPrint.printBaby());
-            System.out.println(Dragon.genderMessage(dragonHatchling));
+            System.out.println(UponHatch.genderMessage(dragonHatchling));
             System.out.print(dragonHatchling);
 
         } catch (FileNotFoundException e) {
