@@ -60,6 +60,10 @@ public class Dragon{
         return gender;
     }
 
+    public double getSize() {
+        return size;
+    }
+
     public void setName(String name) {
         if (name == null || name.isBlank()) {
             throw new IllegalArgumentException("Name cannot be null or blank");
@@ -124,6 +128,6 @@ public class Dragon{
     }
 
     public String toString() {
-        return "\n\tLooks like a " + this.name + "\n";
+        return "\n\tLooks like it's somethign called a " + this.name + "\n";
     }
 }

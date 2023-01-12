@@ -86,7 +86,7 @@ public class Main {
                 System.out.println("\n\tY/N?");
                 res = scan.nextLine();
             }
-
+            // Creates new egg object, player must warm the egg in order to hatch it
             Egg unHatchedEgg = new Egg(false, 0);
             wait(1);
             while (unHatchedEgg.isHatched() == false) {
@@ -98,13 +98,38 @@ public class Main {
                 wait(1);
             }
                   
+            // Message before the egg hatches
             waitMessage(1);
             System.out.println("\n\tI think it's hatching...");
             wait(3);
 
             System.out.println(DragonPrint.printBaby());
+            // reveals the gender of the newly hatched dragon
             System.out.println(UponHatch.genderMessage(dragonHatchling));
+            wait(1);
+            System.out.print("\n\tOther than that I couldn't tell you much");
+            wait(1);
+            System.out.println("\n\tI can scan it for you if you want...");
+            wait(1);
+            System.out.println("\n\tit should tell us a bit more");
+            wait(1);
+            System.out.println("\n\tWhat do you say?");
+            System.out.println("\n\tY/N?");
+            
+            String scanres = scan.nextLine();
+
+            if(!(scanres.equalsIgnoreCase("y"))){
+                System.out.println("too late already did... ");
+            }
+
             System.out.print(dragonHatchling);
+            wait(1);
+            System.out.println("\n\tI can also get the estimated adult size of your dragon...");
+            wait(1);
+            System.out.println("\n\tSays here it will be about " + dragonHatchling.getSize());
+            wait(1);
+
+            
 
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
