@@ -15,7 +15,7 @@ public class DragonTest {
 
     @Before
     public void setup() {
-        dragon = new Dragon("Gore Magala", Dragon.Type.WYRM);
+        dragon = new Dragon("Gogmazios", Dragon.Type.BEHEMOTH, "Deep Water Mountains", "Deep Water Dwarves");
         dragon.setGender(Gender.FEMALE);
     }
 

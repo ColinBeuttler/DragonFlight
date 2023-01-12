@@ -24,8 +24,12 @@ public class Main {
         System.out.println("\n\tWelcome to Dragon Flight");
         System.out.println("\n\tPress ENTER to continue");
         scan.nextLine();
+        // initiates the game on enter
+
 
         // System.out.print(DragonPrint.dragonPrint());
+
+        // Begin Chapter 1: picking a dragon egg
 
         System.out.println("\n\tGood Morning");
         wait(1);
@@ -44,7 +48,7 @@ public class Main {
 
         String ans = scan.nextLine();
 
-        // If they aren't ready to a pick an egg
+        // If they aren't ready to a pick an egg, pick for them
 
         if (!(ans.equalsIgnoreCase("y"))) {
             System.out.println("\n\tNeed more time...");
@@ -120,7 +124,7 @@ public class Main {
         ArrayList<Dragon> dragons = new ArrayList<Dragon>();
         while (scanFile.hasNextLine()) {
             String[] list = scanFile.nextLine().split(",");
-            dragons.add(new Dragon(list[0], Type.valueOf(list[1])));
+            dragons.add(new Dragon(list[0], Type.valueOf(list[1]), list[2], list[3]));
 
         }
         scanFile.close();

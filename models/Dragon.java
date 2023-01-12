@@ -16,13 +16,17 @@ public class Dragon{
     private String name;
     private Gender gender;
     private double size;
+    private String origin;
+    private String keepers;
 
-    public Dragon(String name, Type type) {
+    public Dragon(String name, Type type, String origin, String keepers) {
         if (name == null || name.isBlank()) {
             throw new IllegalArgumentException("Name cannot be null or blank");
         }
         this.name = name;
         this.type = type;
+        this.origin = origin;
+        this.keepers = keepers;
         this.gender = determineGender();
         this.size = determineSize();
     }
@@ -30,6 +34,8 @@ public class Dragon{
     public Dragon(Dragon source) {
         this.name = source.name;
         this.type = source.type;
+        this.origin = source.origin;
+        this.keepers = source.keepers;
         this.gender = source.gender;
         this.size = source.size;
     }
@@ -40,6 +46,14 @@ public class Dragon{
 
     public Type getType() {
         return type;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public String getKeepers() {
+        return keepers;
     }
 
     public Gender getGender() {
@@ -55,6 +69,14 @@ public class Dragon{
 
     public void setType(Type type) {
         this.type = type;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    public void setKeepers(String keepers) {
+        this.keepers = keepers;
     }
 
     public void setGender(Gender gender) {
