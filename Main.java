@@ -24,8 +24,7 @@ public class Main {
         System.out.println("\n\tWelcome to Dragon Flight");
         System.out.println("\n\tPress ENTER to continue");
         scan.nextLine();
-        // initiates the game on enter
-
+        // initiates the game on ENTER
 
         // System.out.print(DragonPrint.dragonPrint());
 
@@ -143,9 +142,46 @@ public class Main {
             wait(1);
             System.out.println("\n\tDo you know about the dragon tribes?");
             wait(1);
+            System.out.println("\n\tEvery dragon has a place of origin...");
+            wait(1);
+            System.out.println("\n\tThe locals of each location of origin know each dragon species best,");
+            wait(1);
+            System.out.println("\n\tsince they are the ones that ride each respective species,");
+            wait(1);
+            System.out.println("\n\tthese locals are known as the dragon tribes.");
+            wait(1);
+            System.out.println("\n\tIf you want to learn how about your new friend, particularly how to ride them,");
+            wait(1);
+            System.out.println("\n\tthen you will need to seek them out...");
+            wait(1);
+            System.out.println("\n\t...so I guess you will want to know where you're headed next?");
+            scan.nextLine();
+            System.out.println("\n\tAccording to my scan device this little one is from the " + dragonHatchling.getOrigin() + ",");
+            wait(1);
+            System.out.println("\n\twhich means the tribe you will want to seek out are the " + dragonHatchling.getKeepers() + ".");
+            wait(2);
+            System.out.println("\n\tQuite a wild bunch if I remember, altough I'd say that about all the dragon tribes...");
+            wait(1);
+            System.out.println("\n\tthere's a reason I just sell their eggs, I'm not crazy enough to actually get on one's back... ");
+            wait(2);
+            System.out.println("\n\tThis is when we part ways, are you ready to go?");
+            System.out.println("\n\tY/N?");
+            String readyRes = scan.nextLine();
 
+            while (!(readyRes.equalsIgnoreCase("y"))) {
+                System.out.println("\n\t...well you can't stay here with me, I have business to attend.");
+                wait(1);
+                System.out.println("\n\tReady to be on your way?");
+                System.out.println("\n\tY/N?");
+                readyRes = scan.nextLine();
+                if (!(readyRes.equalsIgnoreCase("y"))) {
+                    System.out.println("\n\tGET OUT OF HERE THAT IS NOT OPTIONAL!!");
+                }
+            }
 
-            
+            wait(1);
+            System.out.println("\n\tPress ENTER to begin Chapter 2");
+            scan.nextLine();
 
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
