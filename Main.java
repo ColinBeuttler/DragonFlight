@@ -128,6 +128,22 @@ public class Main {
             wait(1);
             System.out.println("\n\tSays here it will be about " + dragonHatchling.getSize());
             wait(1);
+            if (dragonHatchling.getSize() > 4200) {
+                System.out.println("\n\tThats little guys gonna be a big one eh?");
+            }
+            else if (dragonHatchling.getSize() < 2100) {
+                System.out.println("\n\tKinda small for a dragon that is...");
+                wait(1);
+                System.out.println("Don't worry a dragon's size can be deceiving.");
+                System.out.println("It's definately not a measure of power.");
+            }
+            
+            waitMessage(3);
+            System.out.println("\n\tThere is something else here");
+            wait(1);
+            System.out.println("\n\tDo you know about the dragon tribes?");
+            wait(1);
+
 
             
 
