@@ -60,6 +60,7 @@ public class Main {
         wait(1);
         System.out.println("\n\tYou stare deep into the egg...");
 
+        // Creates the Dragon object array
         try {
             ArrayList<Dragon> dragons = readDragons();
             createList(dragons);
@@ -103,9 +104,12 @@ public class Main {
             wait(3);
 
             System.out.println(DragonPrint.printBaby());
+
             // reveals the gender of the newly hatched dragon
             System.out.println(UponHatch.genderMessage(dragonHatchling));
             wait(1);
+
+            // offers the option to scan the egg to learn more
             System.out.print("\n\tOther than that I couldn't tell you much");
             wait(1);
             System.out.println("\n\tI can scan it for you if you want...");
@@ -117,16 +121,20 @@ public class Main {
             
             String scanres = scan.nextLine();
 
-            if(!(scanres.equalsIgnoreCase("y"))){
+            // If player chooses not to scan the egg
+            if (!(scanres.equalsIgnoreCase("y"))) {
                 System.out.println("too late already did... ");
             }
 
+            // estimate of the dragon's adult size
             System.out.print(dragonHatchling);
             wait(1);
             System.out.println("\n\tI can also get the estimated adult size of your dragon...");
             wait(1);
             System.out.println("\n\tSays here it will be about " + dragonHatchling.getSize());
             wait(1);
+
+            // Message about the adult size
             if (dragonHatchling.getSize() > 4200) {
                 System.out.println("\n\tThats little guys gonna be a big one eh?");
             }
@@ -137,6 +145,7 @@ public class Main {
                 System.out.println("It's definately not a measure of power.");
             }
             
+            // Dialogue about the dragon tribes and the new dragon's origins
             waitMessage(3);
             System.out.println("\n\tThere is something else here");
             wait(1);
@@ -164,10 +173,13 @@ public class Main {
             wait(1);
             System.out.println("\n\tthere's a reason I just sell their eggs, I'm not crazy enough to actually get on one's back... ");
             wait(2);
+
+            // Sets up for Chapter 2
             System.out.println("\n\tThis is when we part ways, are you ready to go?");
             System.out.println("\n\tY/N?");
             String readyRes = scan.nextLine();
 
+            // If the player is not ready to leave
             while (!(readyRes.equalsIgnoreCase("y"))) {
                 System.out.println("\n\t...well you can't stay here with me, I have business to attend.");
                 wait(1);
@@ -179,6 +191,7 @@ public class Main {
                 }
             }
 
+            // Chapter 2 initiation dialogue, not yet added from class object InitiateCh2
             wait(1);
             System.out.println("\n\tPress ENTER to begin Chapter 2");
             scan.nextLine();
