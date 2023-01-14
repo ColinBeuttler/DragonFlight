@@ -9,7 +9,6 @@ import models.Dragon;
 import models.DragonsList;
 import models.Egg;
 import models.Dragon.Type;
-
 import java.io.FileInputStream;
 
 public class Main {
@@ -17,6 +16,7 @@ public class Main {
     static String DRAGONS_FILE = "dragons.txt";
 
     static DragonsList dragonList = new DragonsList();
+
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
