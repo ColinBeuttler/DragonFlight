@@ -1,3 +1,7 @@
+package Dialogue;
+
+import java.util.concurrent.TimeUnit;
+
 public class Fillers {
 
         // Method that returns dialogue fillers for pauses in the conversation

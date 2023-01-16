@@ -1,10 +1,9 @@
-Fatalis,BEHEMOTH
-Gore Magala,WYRM
-Valstrax,WYRM
-Malzeno,WYRM
-Namielle,FAE
-Shara Ishvalda,FAE
-Velkhana,FAE
-Xeno'jiiva,BEHEMOTH
-Safi'jiiva,BEHEMOTH
-Gogmazios,BEHEMOTH
+Fatalis,BEHEMOTH,Dark Mountains,Dark Iron Dwarves
+Gore Magala,WYRM,Jungle Mountains,Forest Elves 
+Valstrax,WYRM,Deep Forest,Forest Dryads
+Malzeno,WYRM,Blood Caves,Cave Goblins
+Namielle,FAE,Flooded Islands,Water Dryads
+Shara Ishvalda,FAE,Windy Islands
+Velkhana,FAE,Northern Fjords
+Xeno'jiiva,BEHEMOTH,Sky Fortress,Cyber Dwarves
+Gogmazios,BEHEMOTH,Deep Water Mountains,Deep Water Dwarves

@@ -193,8 +193,15 @@ public class Main {
 
             // Chapter 2 initiation dialogue, not yet added from class object InitiateCh2
             wait(1);
+            System.out.println("A small carriage drops from above you, several adolescent wyverns are tethered to the top.");
+            wait(1);
+            System.out.println("The door swings open, revealing a black barren interior with a single seat, it has no windows");
+            wait(1);
+            System.out.println("You get inside...");
             System.out.println("\n\tPress ENTER to begin Chapter 2");
             scan.nextLine();
+
+
 
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
