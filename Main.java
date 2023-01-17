@@ -28,6 +28,9 @@ public class Main {
 
         // System.out.print(DragonPrint.dragonPrint());
 
+        System.out.println("\n\n\tChapter 1: An Egg and a Stranger.....\n\n");
+        wait(4);
+
         // Begin Chapter 1: picking a dragon egg
 
         System.out.println("\n\tGood Morning");
@@ -159,29 +162,28 @@ public class Main {
             System.out.println("\n\tAnyways... every dragon has a place of origin...");
             wait(2);
             System.out.println("\n\tThe locals of each location of origin know each dragon species best,");
-            wait(2);
+            wait(3);
             System.out.println("\n\tsince they are the ones that ride each respective species,");
             wait(2);
             System.out.println("\n\tthese locals are known as the dragon tribes.");
-            wait(2);
+            wait(3);
             System.out.println("\n\tIf you want to learn how about your new friend, particularly how to ride them,");
             wait(2);
             System.out.println("\n\tthen you will need to seek them out...");
             wait(2);
             System.out.println("\n\t...so I guess you will want to know where you're headed next?");
-            System.out.println("\n\tY/N?");
+            System.out.println("\n\tPress ENTER to continue....");
 
-            String localres = scan.nextLine();
-
+            scan.nextLine();
 
             System.out.println("\n\tAccording to my scan device this little one is from the " + dragonHatchling.getOrigin() + ",");
             wait(2);
             System.out.println("\n\twhich means the tribe you will want to seek out are the " + dragonHatchling.getKeepers() + ".");
-            wait(2);
+            wait(3);
             System.out.println("\n\tQuite a wild bunch if I remember, altough I'd say that about all the dragon tribes...");
             wait(2);
             System.out.println("\n\tthere's a reason I just sell their eggs, I'm not crazy enough to actually get on one's back... ");
-            wait(2);
+            wait(3);
 
             // Sets up for Chapter 2
             System.out.println("\n\tThis is when we part ways, are you ready to go?");

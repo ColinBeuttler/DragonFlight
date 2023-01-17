@@ -99,16 +99,17 @@ public class Dragon{
     private double determineSize() {
         double randSize = 0.0;
         if (this.getType().equals(Type.BEHEMOTH)) {
-            randSize = (Math.random() * (3800 - 4600) + 3800);
+            randSize = (Math.random() * (4600 - 3800) + 3800);
         }
         else if (this.getType().equals(Type.WYRM)) {
-            randSize = (Math.random() * (2100 - 2700) + 2100);
+            randSize = (Math.random() * (2700 - 2100) + 2100);
         }
         else if (this.getType().equals(Type.FAE)) {
-            randSize = (Math.random() * (1750 - 2350) + 1750);
+            randSize = (Math.random() * (2350 - 1750) + 1750);
         }
-        return randSize;
+        return Math.round(randSize*100.00)/100.00;
     }
+
 
     @Override
     public boolean equals(Object obj) {
