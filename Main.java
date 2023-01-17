@@ -206,13 +206,16 @@ public class Main {
             wait(1);
             System.out.println("\n\tA small carriage drops from above you, several adolescent wyverns are tethered to the top.");
             wait(2);
-            System.out.println("\n\t\n\tThe door swings open, revealing a black barren interior with a single seat, it has no windows");
+            System.out.println("\n\tThe door swings open, revealing a black barren interior with a single seat, it has no windows");
             wait(2);
-            System.out.println("\n\t\n\t\n\tYou get inside...");
+            System.out.println("\n\t\n\tYou get inside...");
             System.out.println("\n\tPress ENTER to begin Chapter 2");
             scan.nextLine();
 
-            System.out.println("\n\t\n\t\n\t\n\tAn indeterminant amount of time passes, when suddenly the door swings open...");
+            System.out.println("\n\n\tChapter 2: The " + dragonHatchling.getOrigin() + "\n\n");
+            wait(4);
+
+            System.out.println("\n\tAn indeterminant amount of time passes, when suddenly the door swings open...");
             wait(1);
 
 
