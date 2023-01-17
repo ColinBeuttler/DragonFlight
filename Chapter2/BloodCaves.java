@@ -5,7 +5,7 @@ import Dialogue.Fillers;
 public class BloodCaves {
     
     public static void localeIntro(){
-        System.out.println();
+        System.out.println("");
         Fillers.wait(1);
         System.out.println();
         System.out.println();

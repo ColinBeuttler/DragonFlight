@@ -201,6 +201,9 @@ public class Main {
             System.out.println("\n\tPress ENTER to begin Chapter 2");
             scan.nextLine();
 
+            System.out.println("An indeterminant amount of time passes, when suddenly the door swings open...");
+            wait(1);
+
 
 
         } catch (FileNotFoundException e) {
