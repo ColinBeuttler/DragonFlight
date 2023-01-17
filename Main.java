@@ -86,6 +86,10 @@ public class Main {
                 System.out.println("\n\tY/N?");
                 res = scan.nextLine();
             }
+
+            System.out.println("\n\tYou are handed the egg, you turn it over in your hands...");
+            wait(1);
+
             // Creates new egg object, player must warm the egg in order to hatch it
             Egg unHatchedEgg = new Egg(false, 0);
             wait(1);
@@ -93,9 +97,8 @@ public class Main {
                 wait(1);
                 unHatchedEgg.careMessage();
                 String careRes = scan.nextLine();
-                wait(1);
                 unHatchedEgg.eggCare(careRes);
-                wait(1);
+                wait(2);
             }
                   
             // Message before the egg hatches
@@ -110,27 +113,29 @@ public class Main {
             wait(1);
 
             // offers the option to scan the egg to learn more
-            System.out.print("\n\tOther than that I couldn't tell you much");
-            wait(1);
+            System.out.println("\n\tOther than gender though, I couldn't tell you much");
+            wait(2);
             System.out.println("\n\tI can scan it for you if you want...");
-            wait(1);
-            System.out.println("\n\tit should tell us a bit more");
-            wait(1);
+            wait(2);
+            System.out.println("\n\tthat should tell us a bit more.");
+            wait(2);
             System.out.println("\n\tWhat do you say?");
+            wait(1);
             System.out.println("\n\tY/N?");
             
             String scanres = scan.nextLine();
 
             // If player chooses not to scan the egg
             if (!(scanres.equalsIgnoreCase("y"))) {
-                System.out.println("too late already did... ");
+                System.out.println("\n\ttoo late already did... ");
+                wait(1);
             }
 
             // estimate of the dragon's adult size
             System.out.print(dragonHatchling);
-            wait(1);
+            wait(2);
             System.out.println("\n\tI can also get the estimated adult size of your dragon...");
-            wait(1);
+            waitMessage(3);
             System.out.println("\n\tSays here it will be about " + dragonHatchling.getSize());
             wait(1);
 
@@ -140,37 +145,41 @@ public class Main {
             }
             else if (dragonHatchling.getSize() < 2100) {
                 System.out.println("\n\tKinda small for a dragon that is...");
-                wait(1);
-                System.out.println("Don't worry a dragon's size can be deceiving.");
-                System.out.println("It's definately not a measure of power.");
+                wait(2);
+                System.out.println("\n\tDon't worry a dragon's size can be deceiving.");
+                System.out.println("\n\tIt's definately not a measure of power.");
             }
             
             // Dialogue about the dragon tribes and the new dragon's origins
             waitMessage(3);
             System.out.println("\n\tThere is something else here");
-            wait(1);
+            wait(2);
             System.out.println("\n\tDo you know about the dragon tribes?");
-            wait(1);
-            System.out.println("\n\tEvery dragon has a place of origin...");
-            wait(1);
+            wait(2);
+            System.out.println("\n\tAnyways... every dragon has a place of origin...");
+            wait(2);
             System.out.println("\n\tThe locals of each location of origin know each dragon species best,");
-            wait(1);
+            wait(2);
             System.out.println("\n\tsince they are the ones that ride each respective species,");
-            wait(1);
+            wait(2);
             System.out.println("\n\tthese locals are known as the dragon tribes.");
-            wait(1);
+            wait(2);
             System.out.println("\n\tIf you want to learn how about your new friend, particularly how to ride them,");
-            wait(1);
+            wait(2);
             System.out.println("\n\tthen you will need to seek them out...");
-            wait(1);
+            wait(2);
             System.out.println("\n\t...so I guess you will want to know where you're headed next?");
-            scan.nextLine();
+            System.out.println("\n\tY/N?");
+
+            String localres = scan.nextLine();
+
+
             System.out.println("\n\tAccording to my scan device this little one is from the " + dragonHatchling.getOrigin() + ",");
-            wait(1);
+            wait(2);
             System.out.println("\n\twhich means the tribe you will want to seek out are the " + dragonHatchling.getKeepers() + ".");
             wait(2);
             System.out.println("\n\tQuite a wild bunch if I remember, altough I'd say that about all the dragon tribes...");
-            wait(1);
+            wait(2);
             System.out.println("\n\tthere's a reason I just sell their eggs, I'm not crazy enough to actually get on one's back... ");
             wait(2);
 
@@ -193,15 +202,15 @@ public class Main {
 
             // Chapter 2 initiation dialogue, not yet added from class object InitiateCh2
             wait(1);
-            System.out.println("A small carriage drops from above you, several adolescent wyverns are tethered to the top.");
-            wait(1);
-            System.out.println("The door swings open, revealing a black barren interior with a single seat, it has no windows");
-            wait(1);
-            System.out.println("You get inside...");
+            System.out.println("\n\tA small carriage drops from above you, several adolescent wyverns are tethered to the top.");
+            wait(2);
+            System.out.println("\n\t\n\tThe door swings open, revealing a black barren interior with a single seat, it has no windows");
+            wait(2);
+            System.out.println("\n\t\n\t\n\tYou get inside...");
             System.out.println("\n\tPress ENTER to begin Chapter 2");
             scan.nextLine();
 
-            System.out.println("An indeterminant amount of time passes, when suddenly the door swings open...");
+            System.out.println("\n\t\n\t\n\t\n\tAn indeterminant amount of time passes, when suddenly the door swings open...");
             wait(1);
 
 

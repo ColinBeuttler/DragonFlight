@@ -119,15 +119,15 @@ public class Dragon{
         }
         Dragon dragon = (Dragon) obj;
         return Objects.equals(name, dragon.name) && Objects.equals(type, dragon.type)
-                && Objects.equals(gender, dragon.gender);
+                && Objects.equals(gender, dragon.gender) && Objects.equals(origin, dragon.origin) && Objects.equals(keepers, dragon.keepers);
     }
     
     @Override
     public int hashCode() {
-        return Objects.hash(name, type, gender);
+        return Objects.hash(name, type, gender, origin, keepers);
     }
 
     public String toString() {
-        return "\n\tLooks like it's somethign called a " + this.name + "\n";
+        return "\n\tLooks like it's something called a " + this.name + "\n";
     }
 }
