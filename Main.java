@@ -197,9 +197,6 @@ public class Main {
                 System.out.println("\n\tReady to be on your way?");
                 System.out.println("\n\tY/N?");
                 readyRes = scan.nextLine();
-                if (!(readyRes.equalsIgnoreCase("y"))) {
-                    System.out.println("\n\tGET OUT OF HERE THAT IS NOT OPTIONAL!!");
-                }
             }
 
             // Chapter 2 initiation dialogue, not yet added from class object InitiateCh2
