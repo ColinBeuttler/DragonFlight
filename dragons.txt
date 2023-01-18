@@ -3,7 +3,7 @@ Gore Magala,WYRM,Jungle Mountains,Forest Elves
 Valstrax,WYRM,Deep Forest,Forest Dryads
 Malzeno,WYRM,Blood Caves,Cave Goblins
 Namielle,FAE,Flooded Islands,Water Dryads
-Shara Ishvalda,FAE,Windy Islands,Owlin
-Velkhana,FAE,Northern Fjords,Berzerker Dwarves
+Shara Ishvalda,FAE,Windy Islands,United Federation of The Piracy Nation
+Velkhana,FAE,Northern Fjords,Berzerker Shaman Dwarves
 Xeno'jiiva,BEHEMOTH,Sky Fortress,Cyber Halflings/Cyber Children
 Gogmazios,BEHEMOTH,Deep Water Mountains,Deep Water Gnomes

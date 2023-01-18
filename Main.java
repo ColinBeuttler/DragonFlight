@@ -205,14 +205,14 @@ public class Main {
             wait(2);
             System.out.println("\n\tThe door swings open, revealing a black barren interior with a single seat, it has no windows");
             wait(2);
-            System.out.println("\n\t\n\tYou get inside...");
+            System.out.println("\n\n\tWith your new Hatchling in toe, you get inside...");
             System.out.println("\n\tPress ENTER to begin Chapter 2");
             scan.nextLine();
 
             System.out.println("\n\n\tChapter 2: The " + dragonHatchling.getOrigin() + "\n\n");
             wait(4);
 
-            System.out.println("\n\tAn indeterminant amount of time passes, when suddenly the door swings open...");
+            System.out.println("\n\tAn indeterminant amount of time has passed, when suddenly the door swings open...");
             wait(1);
 
 
