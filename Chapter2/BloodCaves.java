@@ -27,5 +27,6 @@ public class BloodCaves {
         Fillers.wait(2);
         System.out.println("the ceiling seems to be made of either fur and scales and occasionly you notice a slight shifting.");
         Fillers.wait(2);
+        System.out.println("You head up the path until you come to a gatehouse sticking out form the stalactite...");
     }
 }
