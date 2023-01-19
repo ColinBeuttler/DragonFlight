@@ -2,7 +2,7 @@ package Chapter2;
 
 import Dialogue.Fillers;
 
-// Heavy Lies the Crown - Draconian
+// Heavy Lies the Crown - Draconian 
 
 public class BloodCaves {
     
@@ -25,7 +25,7 @@ public class BloodCaves {
         Fillers.wait(2);
         System.out.println("You start to walk up the spiral path and as you get closer to the light you see movement from above you...");
         Fillers.wait(2);
-        System.out.println("the ceiling seems to be made of either fur and scales and is occasionly it shifts.");
+        System.out.println("the ceiling seems to be made of either fur and scales and occasionly you notice a slight shifting.");
         Fillers.wait(2);
     }
 }
