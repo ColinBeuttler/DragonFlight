@@ -1,8 +1,6 @@
-Fatalis,BEHEMOTH,Dark Mountains,Dark Iron Dwarves
-Gore Magala,WYRM,Jungle Mountains,Forest Elves 
-Valstrax,WYRM,Deep Forest,Forest Dryads
+Gore Magala,WYRM,Sky Fortress,Cyber Elves
 Malzeno,WYRM,Blood Caves,Cave Goblins
-Namielle,FAE,Flooded Islands,Water Dryads
+Namielle,FAE,Windy Islands,Anglers
 Shara Ishvalda,FAE,Windy Islands,United Federation of The Piracy Nation
 Velkhana,FAE,Northern Fjords,Berzerker Shaman Dwarves
 Xeno'jiiva,BEHEMOTH,Sky Fortress,Cyber Halflings/Cyber Children
