@@ -2,6 +2,5 @@ Gore Magala,WYRM,Sky Fortress,Cyber Elves
 Malzeno,WYRM,Blood Caves,Cave Goblins
 Namielle,FAE,Windy Islands,Anglers
 Shara Ishvalda,FAE,Windy Islands,United Federation of The Piracy Nation
-Velkhana,FAE,Northern Fjords,Berzerker Shaman Dwarves
 Xeno'jiiva,BEHEMOTH,Sky Fortress,Cyber Halflings/Cyber Children
 Gogmazios,BEHEMOTH,Deep Water Mountains,Deep Water Gnomes
