@@ -3,6 +3,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+import Chapter2.DeepWaterMountains;
+import Chapter2.SkyFortress;
+import Chapter2.WindyIslands;
 import Dialogue.UponHatch;
 import Prints.*;
 import models.Dragon;
@@ -215,6 +218,15 @@ public class Main {
             System.out.println("\n\tAn indeterminant amount of time has passed, when suddenly the door swings open...");
             wait(1);
 
+            if (dragonHatchling.getOrigin().equals("Sky Fortress")) {
+                SkyFortress.localeIntro();
+            }
+            else if (dragonHatchling.getOrigin().equals("Deep Water Mountains")) {
+                DeepWaterMountains.localeIntro();
+            }
+            else if (dragonHatchling.getOrigin().equals("Windy Islands")) {
+                WindyIslands.localeIntro();
+            }
 
 
         } catch (FileNotFoundException e) {
