@@ -1,5 +1,5 @@
 Gore Magala,WYRM,Sky Fortress,Cyber Elves
-Malzeno,WYRM,Blood Caves,Cave Goblins
+Malzeno,WYRM,Deep Water Mountains,Cave Goblins
 Namielle,FAE,Windy Islands,Anglers
 Shara Ishvalda,FAE,Windy Islands,United Federation of The Piracy Nation
 Xeno'jiiva,BEHEMOTH,Sky Fortress,Cyber Halflings/Cyber Children
