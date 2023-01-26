@@ -13,35 +13,32 @@ public class Dragon{
     }
     
     private Type type;
-    private String name;
+    private String species;
     private Gender gender;
-    private double size;
     private String origin;
     private String keepers;
 
-    public Dragon(String name, Type type, String origin, String keepers) {
-        if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("Name cannot be null or blank");
+    public Dragon(String species, Type type, String origin, String keepers, Gender gender) {
+        if (species == null || species.isBlank()) {
+            throw new IllegalArgumentException("species cannot be null or blank");
         }
-        this.name = name;
+        this.species = species;
         this.type = type;
         this.origin = origin;
         this.keepers = keepers;
-        this.gender = determineGender();
-        this.size = determineSize();
+        this.gender = gender;
     }
 
     public Dragon(Dragon source) {
-        this.name = source.name;
+        this.species = source.species;
         this.type = source.type;
         this.origin = source.origin;
         this.keepers = source.keepers;
         this.gender = source.gender;
-        this.size = source.size;
     }
 
-    public String getName() {
-        return name;
+    public String getspecies() {
+        return species;
     }
 
     public Type getType() {
@@ -60,15 +57,12 @@ public class Dragon{
         return gender;
     }
 
-    public double getSize() {
-        return size;
-    }
 
-    public void setName(String name) {
-        if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("Name cannot be null or blank");
+    public void setspecies(String species) {
+        if (species == null || species.isBlank()) {
+            throw new IllegalArgumentException("species cannot be null or blank");
         }
-        this.name = name;
+        this.species = species;
     }
 
     public void setType(Type type) {
@@ -87,7 +81,8 @@ public class Dragon{
         this.gender = gender;
     }
 
-    private Gender determineGender() {
+
+    public static Gender determineGender() {
         int gender = (int) Math.round(Math.random());
         if (gender < 1) {
             return Gender.FEMALE;
@@ -95,21 +90,6 @@ public class Dragon{
             return Gender.MALE;
         }
     }
-
-    private double determineSize() {
-        double randSize = 0.0;
-        if (this.getType().equals(Type.BEHEMOTH)) {
-            randSize = (Math.random() * (4600 - 3800) + 3800);
-        }
-        else if (this.getType().equals(Type.WYRM)) {
-            randSize = (Math.random() * (2700 - 2100) + 2100);
-        }
-        else if (this.getType().equals(Type.FAE)) {
-            randSize = (Math.random() * (2350 - 1750) + 1750);
-        }
-        return Math.round(randSize*100.00)/100.00;
-    }
-
 
     @Override
     public boolean equals(Object obj) {
@@ -119,16 +99,16 @@ public class Dragon{
             return false;
         }
         Dragon dragon = (Dragon) obj;
-        return Objects.equals(name, dragon.name) && Objects.equals(type, dragon.type)
+        return Objects.equals(species, dragon.species) && Objects.equals(type, dragon.type)
                 && Objects.equals(gender, dragon.gender) && Objects.equals(origin, dragon.origin) && Objects.equals(keepers, dragon.keepers);
     }
     
     @Override
     public int hashCode() {
-        return Objects.hash(name, type, gender, origin, keepers);
+        return Objects.hash(species, type, gender, origin, keepers);
     }
 
     public String toString() {
-        return "\n\tLooks like it's something called a " + this.name + "\n";
+        return "\n\tLooks like it's something called a " + this.species + "\n";
     }
 }

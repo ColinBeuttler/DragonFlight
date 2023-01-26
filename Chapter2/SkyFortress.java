@@ -52,9 +52,21 @@ public class SkyFortress {
         Fillers.wait(2);
         System.out.println("'My name is (insert name), I'm one of the cyber children, I can't help you train it, but I know someone who can...'");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("She gestures for you to follow her, as you walk through the doorway you get your first glimpse of the city...");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("On either side of you are large dark walls that are made of large metal boxes of various sizes with metal pilars between them..");
+        Fillers.wait(2);
+        System.out.println("The ones at ground level have open fronts about three meters wide or more with colorful signs and awnings, each has an assortment of fresh food or clothing and trinkets.");
+        Fillers.wait(2);
+        System.out.println("The street itself is about ten meters wide and is covered in metal scraps and grates. ");
+        Fillers.wait(2);
+        System.out.println("People of all shapes and sizes crowd the streets, many of which resemble (insert name), many much larger.");
+        Fillers.wait(2);
+        System.out.println("(insert name) leads you down a narrow alley way, small doors and windows line either side, somes you can see eyes staring back from within. ");
+        Fillers.wait(2);
+        System.out.println("You continue to be lead down many passage ways, right then left and right again until you come to a door that is much larger than any of the previous you passed.");
+        Fillers.wait(2);
+        System.out.println("'Here we are finally, let's head inside...'");
         
     }
 }

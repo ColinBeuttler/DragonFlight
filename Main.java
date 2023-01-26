@@ -11,6 +11,7 @@ import Prints.*;
 import models.Dragon;
 import models.DragonsList;
 import models.Egg;
+import models.Dragon.Gender;
 import models.Dragon.Type;
 import java.io.FileInputStream;
 
@@ -137,24 +138,9 @@ public class Main {
                 wait(1);
             }
 
-            // estimate of the dragon's adult size
+            // Tell the player the dragon species
             System.out.print(dragonHatchling);
-            wait(2);
-            System.out.println("\n\t'I can also get the estimated adult size of your dragon...");
-            waitMessage(3);
-            System.out.println("\n\tSays here it will be about " + dragonHatchling.getSize() + "'");
-            wait(1);
 
-            // Message about the adult size
-            if (dragonHatchling.getSize() > 4200) {
-                System.out.println("\n\t'Thats little guys gonna be a big one eh?'");
-            }
-            else if (dragonHatchling.getSize() < 2100) {
-                System.out.println("\n\t'Kinda small for a dragon that is...");
-                wait(2);
-                System.out.println("\n\tDon't worry a dragon's size can be deceiving.'");
-                System.out.println("\n\t'It's definately not a measure of power.'");
-            }
             
             // Dialogue about the dragon tribes and the new dragon's origins
             waitMessage(3);
@@ -242,12 +228,13 @@ public class Main {
     public static ArrayList<Dragon> readDragons() throws FileNotFoundException {
         FileInputStream fis = new FileInputStream(DRAGONS_FILE);
         Scanner scanFile = new Scanner(fis);
+        Gender dGender = Dragon.determineGender();
 
         // Adds the lines of the dragon file to the ArrayList Dragons
         ArrayList<Dragon> dragons = new ArrayList<Dragon>();
         while (scanFile.hasNextLine()) {
             String[] list = scanFile.nextLine().split(",");
-            dragons.add(new Dragon(list[0], Type.valueOf(list[1]), list[2], list[3]));
+            dragons.add(new Dragon(list[0], Type.valueOf(list[1]), list[2], list[3], dGender));
 
         }
         scanFile.close();
