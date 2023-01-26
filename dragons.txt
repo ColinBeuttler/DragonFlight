@@ -1,6 +1,6 @@
-Gore Magala,WYRM,Sky Fortress,Cyber Elves
+Gore Magala,WYRM,Sky Fortress,Cyber Halflings/Cyber Children
 Malzeno,WYRM,Deep Water Mountains,Cave Goblins
 Namielle,FAE,Windy Islands,Anglers
 Shara Ishvalda,FAE,Windy Islands,United Federation of The Piracy Nation
-Xeno'jiiva,BEHEMOTH,Sky Fortress,Cyber Halflings/Cyber Children
+Xeno'jiiva,BEHEMOTH,Sky Fortress,Cyber Elves
 Gogmazios,BEHEMOTH,Deep Water Mountains,Deep Water Gnomes

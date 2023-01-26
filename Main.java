@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import Chapter2.DeepWaterMountains;
 import Chapter2.SkyFortress;
 import Chapter2.WindyIslands;
+import Dialogue.InitiateCh2;
 import Dialogue.UponHatch;
 import Prints.*;
 import models.Dragon;
@@ -187,6 +188,8 @@ public class Main {
                 System.out.println("\n\tY/N?");
                 readyRes = scan.nextLine();
             }
+
+            InitiateCh2.adventureBegins(dragonHatchling);
 
             // Chapter 2 initiation dialogue, not yet added from class object InitiateCh2
             wait(1);
