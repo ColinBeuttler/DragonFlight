@@ -5,7 +5,7 @@ public class NamedDragon extends Dragon {
     public String name;
 
 
-    public NamedDragon(String species, Type type, String origin, String keepers, String name, Gender gender) {
+    public NamedDragon(String name, String species, Type type, String origin, String keepers, Gender gender) {
         super(species, type, origin, keepers, gender);
         this.name = name;
     }
@@ -18,5 +18,8 @@ public class NamedDragon extends Dragon {
         return name;
     }
 
+    public static NamedDragon creatNamedDragon(Dragon hatchling, String name) {
+        return new NamedDragon(name, hatchling.getSpecies(), hatchling.getType(), hatchling.getOrigin(), hatchling.getKeepers(), hatchling.getGender());
+    }
 
 }

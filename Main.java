@@ -231,12 +231,12 @@ public class Main {
     public static ArrayList<Dragon> readDragons() throws FileNotFoundException {
         FileInputStream fis = new FileInputStream(DRAGONS_FILE);
         Scanner scanFile = new Scanner(fis);
-        Gender dGender = Dragon.determineGender();
 
         // Adds the lines of the dragon file to the ArrayList Dragons
         ArrayList<Dragon> dragons = new ArrayList<Dragon>();
         while (scanFile.hasNextLine()) {
             String[] list = scanFile.nextLine().split(",");
+            Gender dGender = Dragon.determineGender();
             dragons.add(new Dragon(list[0], Type.valueOf(list[1]), list[2], list[3], dGender));
 
         }

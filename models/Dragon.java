@@ -37,7 +37,7 @@ public class Dragon{
         this.gender = source.gender;
     }
 
-    public String getspecies() {
+    public String getSpecies() {
         return species;
     }
 
@@ -58,7 +58,7 @@ public class Dragon{
     }
 
 
-    public void setspecies(String species) {
+    public void setSpecies(String species) {
         if (species == null || species.isBlank()) {
             throw new IllegalArgumentException("species cannot be null or blank");
         }
