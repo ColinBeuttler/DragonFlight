@@ -99,6 +99,31 @@ public class SkyFortress {
     
     public void cyberChildLeader() {
 
+        System.out.println("After you walk through the doorway, you find yourself in a small waiting room.");
+        Fillers.wait(2);
+        System.out.println("The walls are all white and on the wall opposite the entrance is a sliding glass panel with a creature similar to Gilly behind it.");
+        Fillers.wait(2);
+        System.out.println("Both you and Gilly are guided to a hallway through the only door into the room...");
+        Fillers.wait(2);
+        System.out.println("the door swings open, a voice commands you to enter, both you and Gilly walk into a stark white office.");
+        Fillers.wait(2);
+        System.out.println("Most of the room is being taken up by a large cubicle, covered in stickers, models, and pictures of dragons and their riders.");
+        Fillers.wait(2);
+        System.out.println("'Salutaions newcomer' says a female voice from behind the cubicle, then out walks another individual.");
+        Fillers.wait(2);
+        System.out.println("She has similar size and features to Gilly, although has an older and more attentive face");
+        Fillers.wait(2);
+        System.out.println("'Friends call me Poppy, I'm the current commander of the Cyber Children dragon tribe.'");
+        Fillers.wait(2);
+        System.out.println("Poppy has on a bright orange flightsuit with white and blue stripes running down each side and across the front.");
+        Fillers.wait(2);
+        System.out.println("'Like the suit? That's the first order of business, you're gonna have to get your own if you want to ride a dragon...");
+        Fillers.wait(2);
+        System.out.println("take this note down to the market tailor, then come back and we will discuss the next steps from there.'");
+        Fillers.wait(2);
+        System.out.println("Press ENTER to continue....");
+        scan.nextLine();
+
     }
     
     
