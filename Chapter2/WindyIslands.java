@@ -55,5 +55,71 @@ public class WindyIslands {
         System.out.println("");
         Fillers.wait(2);
         System.out.println("");
+
+          // if (hatchling.getSpecies().equals("Shara Ishvalda")) {
+        //     uFPNLeader();
+        // }
+
+        // else if (hatchling.getSpecies().equals("Namielle")) {
+        //     anglersLeader();
+        // }
+    }
+
+    public void uFPNLeader() {
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+    }
+
+    public void anglersLeader() {
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
     }
 }

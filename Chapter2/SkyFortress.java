@@ -126,6 +126,33 @@ public class SkyFortress {
 
     }
     
-    
+    public void cyberElvesLeader() {
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+    }
 }
 

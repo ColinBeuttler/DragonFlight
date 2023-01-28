@@ -58,5 +58,71 @@ public class DeepWaterMountains {
         System.out.println("");
         Fillers.wait(2);
         System.out.println("");
+
+          // if (hatchling.getSpecies().equals("Gogmazios")) {
+        //     deepWatergnomesLeader();
+        // }
+
+        // else if (hatchling.getSpecies().equals("Malzena")) {
+        //     caveGoblinLeader();
+        // }
+    }
+
+    public void deepWaterGnomesLeader() {
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+    }
+
+    public void caveGoblinLeader() {
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
     }
 }
