@@ -3,6 +3,7 @@ package Chapter2;
 import java.util.Scanner;
 
 import Dialogue.Fillers;
+import models.Dragon;
 
 // Universe - Edge of Paradise
 // Ghosts - Xandria
@@ -11,7 +12,8 @@ public class SkyFortress {
 
     static Scanner scan = new Scanner(System.in);
     
-    public static void localeIntro() {
+    public static void localeIntro(Dragon hatchling) {
+        // intro to location - description of new location
         System.out.println("\n\tYou look ou tinto a giant black horizon...");
         Fillers.wait(2);
         System.out.println(
@@ -36,9 +38,13 @@ public class SkyFortress {
         Fillers.wait(2);
         System.out.println(
                 "\n\tThe structure has a small colored glass window on the front with two large bright eyes peering through it...");
-    }
-    
-    public static void theFriendlyFace() {
+
+        System.out.println("Press ENTER to Continue...");
+        scan.nextLine();
+   
+        // A new character is introduced, this character takes you to the tribe leader
+        // In this case Gilly, she will take reader to either cyber children or cyber elves...
+
         Fillers.wait(2);
         System.out.println("a small section of the large structure moves revealing a doorway.");
         Fillers.wait(2);
@@ -56,7 +62,7 @@ public class SkyFortress {
         System.out.println(
                 "'You must be new here, this is the SkyCity, home of many alien species and dragons from other worlds'");
         Fillers.wait(2);
-        System.out.println("'I see you have a " + "(insert Dragon species)"
+        System.out.println("'I see you have a " + hatchling.getSpecies()
                 + " there... I'm guessing you came here to train it.'");
         Fillers.wait(2);
         System.out.println(
@@ -87,17 +93,19 @@ public class SkyFortress {
         System.out.println("\n\tPress ENTER to continue...");
         scan.nextLine();
 
-        // if (hatchling.getSpecies().equals("Gore Magala")) {
-        //     cyberChildLeader();
-        // }
+        // your dragon type determines which leader you will see in the next scene depneding on the species you picked in the first chapter
 
-        // else if (hatchling.getSpecies().equals("Xeno'jiiva")) {
-        //     cyberElvesLeader();
-        // }
+        if (hatchling.getSpecies().equals("Gore Magala")) {
+            cyberChildLeader();
+        }
+
+        else if (hatchling.getSpecies().equals("Xeno'jiiva")) {
+            cyberElvesLeader();
+        }
 
     }
     
-    public void cyberChildLeader() {
+    public static void cyberChildLeader() {
 
         System.out.println("After you walk through the doorway, you find yourself in a small waiting room.");
         Fillers.wait(2);
@@ -121,12 +129,25 @@ public class SkyFortress {
         Fillers.wait(2);
         System.out.println("take this note down to the market tailor, then come back and we will discuss the next steps from there.'");
         Fillers.wait(2);
+        System.out.println("'Before you go I have one question for you...");
+        Fillers.wait(2);
+        System.out.println("Have you named your dragon yet?'");
+        Fillers.wait(2);
+        System.out.println("Enter a name for your dragon.");
+
+        // pick the dragons name, this will later become the new namedDragon object
+        String dragonName = scan.nextLine();
+        System.out.println("'Excellant, now go see that tailor and hurry back we have a lot to cover today'");
+        Fillers.wait(2);
         System.out.println("Press ENTER to continue....");
         scan.nextLine();
 
+        // initiate the diaglogue wiht the tailor in order to get your flightsuit
+        TheTailor.tailorDialogue();
+
     }
     
-    public void cyberElvesLeader() {
+    public static void cyberElvesLeader() {
         System.out.println("");
         Fillers.wait(2);
         System.out.println("");

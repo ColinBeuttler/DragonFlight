@@ -208,7 +208,7 @@ public class Main {
             wait(1);
 
             if (dragonHatchling.getOrigin().equals("Sky Fortress")) {
-                SkyFortress.localeIntro();
+                SkyFortress.localeIntro(dragonHatchling);
             }
             else if (dragonHatchling.getOrigin().equals("Deep Water Mountains")) {
                 DeepWaterMountains.localeIntro();
