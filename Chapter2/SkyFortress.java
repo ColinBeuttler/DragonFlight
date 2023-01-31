@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import Dialogue.Fillers;
 import models.Dragon;
+import models.NamedDragon;
 
 // Universe - Edge of Paradise
 // Ghosts - Xandria
@@ -96,7 +97,7 @@ public class SkyFortress {
         // your dragon type determines which leader you will see in the next scene depneding on the species you picked in the first chapter
 
         if (hatchling.getSpecies().equals("Gore Magala")) {
-            cyberChildLeader();
+            cyberChildLeader(hatchling);
         }
 
         else if (hatchling.getSpecies().equals("Xeno'jiiva")) {
@@ -105,7 +106,7 @@ public class SkyFortress {
 
     }
     
-    public static void cyberChildLeader() {
+    public static void cyberChildLeader(Dragon hatchling) {
 
         System.out.println("After you walk through the doorway, you find yourself in a small waiting room.");
         Fillers.wait(2);
@@ -137,13 +138,15 @@ public class SkyFortress {
 
         // pick the dragons name, this will later become the new namedDragon object
         String dragonName = scan.nextLine();
+        NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
+        
         System.out.println("'Excellant, now go see that tailor and hurry back we have a lot to cover today'");
         Fillers.wait(2);
         System.out.println("Press ENTER to continue....");
         scan.nextLine();
 
         // initiate the diaglogue wiht the tailor in order to get your flightsuit
-        TheTailor.tailorDialogue();
+        TheTailor.tailorDialogue(dragon);
 
     }
     
