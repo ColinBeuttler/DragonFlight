@@ -8,30 +8,30 @@ public class Fillers {
         public static void waitMessage(int sec) {
             switch (sec) {
                 case 1: {
-                    System.out.println("\n\tWWHHHAAATTTT!!!");
+                    System.out.println("\n\t'WWHHHAAATTTT!!!'");
                     wait(sec);
                     break;
                 }
                 case 2: {
-                    System.out.println("\n\thmmmm...\n");
+                    System.out.println("\n\t'hmmmm...'\n");
                     wait(sec);
                     break;
                 }
                 case 3: {
                     wait(1);
-                    System.out.println("\n\tHold on...\n");
+                    System.out.println("\n\t'Hold on...'\n");
                     wait(2);
                     break;
                 }
                 case 5: {
-                    System.out.println("\n\tHope you don't want an answer before sundown hahahaha.....\n");
+                    System.out.println("\n\t'Hope you don't want an answer before sundown hahahaha.....'\n");
                     wait(4);
-                    System.out.println("\tJk ;)\n");
+                    System.out.println("\t'Jk ;)'\n");
                     wait(1);
                     break;
                 }
                 default: {
-                    System.out.println("\n\tThis may take a few minutes...\n");
+                    System.out.println("\n\t'This may take a few minutes...'\n");
                     wait(sec);
                 }
             }
