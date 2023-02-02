@@ -13,6 +13,8 @@ public class DeepWaterMountains {
     static Scanner scan = new Scanner(System.in);
 
     public static void localeIntro(Dragon hatchling) {
+
+        // Description of first glance at Deepholm 
         System.out.println("\n\tBefore you there is a large cavern jutting out of the side a very dark mountain");
         Fillers.wait(2);
         System.out.println("\n\tthe sky is grey with the smell of rain lingering in the air...");
@@ -45,10 +47,11 @@ public class DeepWaterMountains {
         Fillers.wait(2);
         System.out.println("After crossign the bridge, you are face an arched gatehouse with a wrought Iron fence.");
         Fillers.wait(2);
-        System.out.println("On the other side of the iron fence, you can see a figure with a staff and a latern standing about 1 meter tall.");
-    }
-    
-    public static void theFriendlyFace(Dragon hatchling) {
+        System.out.println(
+                "On the other side of the iron fence, you can see a figure with a staff and a latern standing about 1 meter tall.");
+   
+        // Introduction to Berdi "a friendly face." 
+        // Berdi will take the reader to the tribes of either DeepWater Gnomes or Cave Goblins
         Fillers.wait(2);
         System.out.println("As you appraoch you can see the figure is a gnome, her face and hair are partially hidden underneath a hood.");
         Fillers.wait(2);
