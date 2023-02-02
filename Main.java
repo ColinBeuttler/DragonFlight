@@ -211,7 +211,7 @@ public class Main {
                 SkyFortress.localeIntro(dragonHatchling);
             }
             else if (dragonHatchling.getOrigin().equals("Deep Water Mountains")) {
-                DeepWaterMountains.localeIntro();
+                DeepWaterMountains.localeIntro(dragonHatchling);
             }
             else if (dragonHatchling.getOrigin().equals("Windy Islands")) {
                 WindyIslands.localeIntro();
