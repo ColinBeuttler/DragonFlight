@@ -128,9 +128,9 @@ public class SkyFortress {
         Fillers.wait(2);
         System.out.println("'Like the suit? That's the first order of business, you're gonna have to get your own if you want to ride a dragon...");
         Fillers.wait(2);
-        System.out.println("take this note down to the market tailor, then come back and we will discuss the next steps from there.'");
+        System.out.println("you will need to see the tailor for fitting and such, he will back the way you came in the market.'");
         Fillers.wait(2);
-        System.out.println("'Before you go I have one question for you...");
+        System.out.println("'I have one question for you though...");
         Fillers.wait(2);
         System.out.println("Have you named your dragon yet?'");
         Fillers.wait(2);
@@ -139,9 +139,12 @@ public class SkyFortress {
         // pick the dragons name, this will later become the new namedDragon object
         String dragonName = scan.nextLine();
         NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
-        
-        System.out.println("'Excellant, now go see that tailor and hurry back we have a lot to cover today'");
-        Fillers.wait(2);
+
+        System.out.println("'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
+                Fillers.wait(2);
+                System.out.println("'Now go see that tailor, I will be in contact.'");
+                Fillers.wait(2);
+
         System.out.println("Press ENTER to continue....");
         scan.nextLine();
 

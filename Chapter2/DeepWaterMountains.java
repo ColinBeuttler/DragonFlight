@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import Dialogue.Fillers;
 import models.Dragon;
+import models.NamedDragon;
 
 // Chambers of Fire - Battlelore
 // Heavy Lies the Crown - Draconian
@@ -84,7 +85,7 @@ public class DeepWaterMountains {
         }
 
         else if (hatchling.getSpecies().equals("Malzena")) {
-            caveGoblinLeader();
+            caveGoblinLeader(hatchling);
         }
     }
 
@@ -117,7 +118,7 @@ public class DeepWaterMountains {
         Fillers.wait(2);
     }
 
-    public static void caveGoblinLeader() {
+    public static void caveGoblinLeader(Dragon hatchling) {
         System.out.println("Berdi leads you thorugh the city until you come to a large stalagmite with windows carved into its sides.");
         Fillers.wait(2);
         System.out.println("She leads you up the spiral staircase carved into the rock until you arrive at a giant stainglass doorway.");
@@ -140,9 +141,28 @@ public class DeepWaterMountains {
         Fillers.wait(2);
         System.out.println("'There is a tailor in DeepHolm within the market district, we have a deal with the tailor there, he makes all our suits, he will be able to help you out.'");
         Fillers.wait(2);
-        System.out.println("'Don't worry about payment for him, we have a business account with him the covers expenses for new recruits. Although he may ask for the materials for your suit.'");
-        Fillers.wait(2);
-        System.out.println("'Before you head off, take this.' He hands you a watch. 'Keep it on I will contact you with the next instructions to save you the trip back up here.'");
-        Fillers.wait(2);
+        System.out.println(
+                "'Don't worry about paying, we have a business account with him the covers expenses for new recruits. Although he may ask for the materials for your suit.'");
+                Fillers.wait(2);
+                System.out.println("'I have one question for you though...");
+                Fillers.wait(2);
+                System.out.println("Have you named your dragon yet?'");
+                Fillers.wait(2);
+                System.out.println("Enter a name for your dragon.");
+        
+                // pick the dragons name, this will later become the new namedDragon object
+                String dragonName = scan.nextLine();
+                NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
+                
+                System.out.println("'One last thing, take this.' He hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back up here.'");
+                Fillers.wait(2);
+                System.out.println("'Now go see that tailor, I will be in contact.'");
+                Fillers.wait(2);
+                System.out.println("Press ENTER to continue....");
+                scan.nextLine();
+        
+                // initiate the diaglogue wiht the tailor in order to get your flightsuit
+                TheTailor.tailorDialogue(dragon);
+       
     }
 }
