@@ -12,7 +12,7 @@ public class TheTailor {
    public static void tailorDialogue(Dragon dragon){
        System.out.println("Upon entering the tailor's shop, you see a tall slender figure before you...");
        Fillers.wait(2);
-       System.out.println("The figure appears to be humanoid except that this figure is entirely made of metal.");
+       System.out.println("The figure appears to be human except that this figure is entirely made of metal.");
        Fillers.wait(2);
        System.out.println("His face is smooth and mostly featureless, save for two large glowing eyes and a small rectangular mouth.");
        Fillers.wait(2);

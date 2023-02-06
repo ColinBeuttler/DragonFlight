@@ -110,7 +110,7 @@ public class DeepWaterMountains {
         System.out.println("");
         Fillers.wait(2);
         System.out.println("");
-        Fillers.wait(2);
+        Fillers.wait(2); 
         System.out.println("");
         Fillers.wait(2);
         System.out.println("");
@@ -118,31 +118,31 @@ public class DeepWaterMountains {
     }
 
     public static void caveGoblinLeader() {
-        System.out.println("");
+        System.out.println("Berdi leads you thorugh the city until you come to a large stalagmite with windows carved into its sides.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("She leads you up the spiral staircase carved into the rock until you arrive at a giant stainglass doorway.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("The two of you enter the stalagmite into a room with a fireplace and giant stone columns reachign to the ceiling, all the furnitrue is covered in furs.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("you are led up another staircase within the structure, until you find yourself standing in front of a small stone door.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("You both walk through the door, you are standing with an office, bookshelves on either side of you, a large rug covering the stoen floor.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'Excuse the mess, I was expecting company,' a raspy voice says as a tall pale goblin stands up from behind a large wooden desk.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("His a dark and widely spaced on a slim, angular face. His ears are long, broad at the base and end in sharp points, resembling those of a bat's.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("Both of his giant ears are pierced multiple times along the bottom edge, his flat triangular nose had a large gold ring through the center.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'My name is Gnax, I'm the elder of the cave Goblin Dragon Tribe. And you have already met Berdi...' He turns to Berdi and smiles. Berdi turns and leaves the room.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'So let's get started you have a lot of work ahead of you, first you will need to get a riding suit, and I doubt we have a spare suit that would fit a human.'");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'There is a tailor in DeepHolm within the market district, we have a deal with the tailor there, he makes all our suits, he will be able to help you out.'");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'Don't worry about payment for him, we have a business account with him the covers expenses for new recruits. Although he may ask for the materials for your suit.'");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'Before you head off, take this.' He hands you a watch. 'Keep it on I will contact you with the next instructions to save you the trip back up here.'");
         Fillers.wait(2);
     }
 }
