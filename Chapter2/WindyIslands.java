@@ -1,12 +1,18 @@
 package Chapter2;
 
+import java.util.Scanner;
+
 import Dialogue.Fillers;
+import models.Dragon;
+import models.NamedDragon;
 
 // Magelllan's Expedition - Alestorm
 
 public class WindyIslands {
     
-    public static void localeIntro() {
+    static Scanner scan = new Scanner(System.in);
+    
+    public static void localeIntro(Dragon hatchling) {
         System.out.println("\n\tYou step out of the carraige onto a beautiful white sand beach.");
         Fillers.wait(2);
         System.out.println("\n\tBefore you lies a small port city surrounded by wooden fence about ten feet tall...");
@@ -32,9 +38,7 @@ public class WindyIslands {
         System.out.println(
                 "\n\t'Welcome to the free city of El Ciclo de Fuego, capital of the United Federation of The Piracy Nation or U-F-P-N for short!!'");
         Fillers.wait(2);
-    }
-    
-    public static void theFriendlyFace() {
+ 
         Fillers.wait(2);
         System.out.println("");
         Fillers.wait(2);
@@ -56,16 +60,16 @@ public class WindyIslands {
         Fillers.wait(2);
         System.out.println("");
 
-          // if (hatchling.getSpecies().equals("Shara Ishvalda")) {
-        //     uFPNLeader();
-        // }
+          if (hatchling.getSpecies().equals("Shara Ishvalda")) {
+            uFPNLeader(hatchling);
+        }
 
-        // else if (hatchling.getSpecies().equals("Namielle")) {
-        //     anglersLeader();
-        // }
+        else if (hatchling.getSpecies().equals("Namielle")) {
+            anglersLeader(hatchling);
+        }
     }
 
-    public void uFPNLeader() {
+    public static void uFPNLeader(Dragon hatchling) {
         System.out.println("");
         Fillers.wait(2);
         System.out.println("");
@@ -92,9 +96,29 @@ public class WindyIslands {
         Fillers.wait(2);
         System.out.println("");
         Fillers.wait(2);
+        System.out.println("'I have one question for you though...");
+        Fillers.wait(2);
+        System.out.println("Have you named your dragon yet?'");
+        Fillers.wait(2);
+        System.out.println("Enter a name for your dragon.");
+
+        // pick the dragons name, this will later become the new namedDragon object
+        String dragonName = scan.nextLine();
+        NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
+
+        System.out.println("'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
+                Fillers.wait(2);
+                System.out.println("'Now go see that tailor, I will be in contact.'");
+                Fillers.wait(2);
+
+        System.out.println("Press ENTER to continue....");
+        scan.nextLine();
+
+        // initiate the diaglogue wiht the tailor in order to get your flightsuit
+        TheTailor.tailorDialogue(dragon);
     }
 
-    public void anglersLeader() {
+    public static void anglersLeader(Dragon hatchling) {
         System.out.println("");
         Fillers.wait(2);
         System.out.println("");
@@ -121,5 +145,25 @@ public class WindyIslands {
         Fillers.wait(2);
         System.out.println("");
         Fillers.wait(2);
+        System.out.println("'I have one question for you though...");
+        Fillers.wait(2);
+        System.out.println("Have you named your dragon yet?'");
+        Fillers.wait(2);
+        System.out.println("Enter a name for your dragon.");
+
+        // pick the dragons name, this will later become the new namedDragon object
+        String dragonName = scan.nextLine();
+        NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
+
+        System.out.println("'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
+                Fillers.wait(2);
+                System.out.println("'Now go see that tailor, I will be in contact.'");
+                Fillers.wait(2);
+
+        System.out.println("Press ENTER to continue....");
+        scan.nextLine();
+
+        // initiate the diaglogue wiht the tailor in order to get your flightsuit
+        TheTailor.tailorDialogue(dragon);
     }
 }

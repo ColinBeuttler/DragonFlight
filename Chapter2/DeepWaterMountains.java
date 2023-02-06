@@ -81,7 +81,7 @@ public class DeepWaterMountains {
 
 
           if (hatchling.getSpecies().equals("Gogmazios")) {
-            deepWaterGnomesLeader();
+            deepWaterGnomesLeader(hatchling);
         }
 
         else if (hatchling.getSpecies().equals("Malzena")) {
@@ -89,7 +89,7 @@ public class DeepWaterMountains {
         }
     }
 
-    public static void deepWaterGnomesLeader() {
+    public static void deepWaterGnomesLeader(Dragon hatchling) {
         System.out.println("");
         Fillers.wait(2);
         System.out.println("");
@@ -111,12 +111,35 @@ public class DeepWaterMountains {
         System.out.println("");
         Fillers.wait(2);
         System.out.println("");
-        Fillers.wait(2); 
-        System.out.println("");
         Fillers.wait(2);
         System.out.println("");
         Fillers.wait(2);
+        System.out.println("");
+        Fillers.wait(2);
+        System.out.println("'I have one question for you though...");
+        Fillers.wait(2);
+        System.out.println("Have you named your dragon yet?'");
+        Fillers.wait(2);
+        System.out.println("Enter a name for your dragon.");
+
+        // pick the dragons name, this will later become the new namedDragon object
+        String dragonName = scan.nextLine();
+        NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
+
+        System.out.println(
+                "'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
+        Fillers.wait(2);
+        System.out.println("'Now go see that tailor, I will be in contact.'");
+        Fillers.wait(2);
+
+        System.out.println("Press ENTER to continue....");
+        scan.nextLine();
+
+        // initiate the diaglogue wiht the tailor in order to get your flightsuit
+        TheTailor.tailorDialogue(dragon);
     }
+    
+
 
     public static void caveGoblinLeader(Dragon hatchling) {
         System.out.println("Berdi leads you thorugh the city until you come to a large stalagmite with windows carved into its sides.");
