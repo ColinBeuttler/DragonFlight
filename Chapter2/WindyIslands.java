@@ -33,32 +33,50 @@ public class WindyIslands {
                 "\n\tsinging, laughing, and the very distinct sound of wine and rum bottles being clinked together.");
         Fillers.wait(2);
         System.out.println(
-                "\n\tOn top of the wall, there is a young Goblin looking  nat you with a friendly yet surprisingly toothy smile...");
+                "\n\tOn top of the wall, there is a young Goblin looking diretcly at you with a friendly yet surprisingly toothy smile...");
         Fillers.wait(2);
         System.out.println(
                 "\n\t'Welcome to the free city of El Ciclo de Fuego, capital of the United Federation of The Piracy Nation or U-F-P-N for short!!'");
         Fillers.wait(2);
  
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("As he lowers himself off the wall with a tail covered in wispy white hair, you notice he is carrying a samll curved sword.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("He falls the last few meters landing on all fours. He strightens up revealing ragged clothes including a numerously mended vest and baker's boy cap.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("His face was wide with red eyes spread appart by a wide flat nose. Small pointed teeth lined the top and bottom of a smile that extended ear to ear.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("The white wispy hair that was on his tail covered most of the rest of him except his face and the bottom edge and tips of his long jagged ears.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'Hello there', the goblin extends his paw.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'Name's Ollie, I'm the resident greeter here, what brings you to this corner of the world?'");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("Before you can answer, the newly hatched dragon makes an appearance from within your jacket.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'Oi!! Haven't seen one of those in some time. I can take you where you need to go, follow me.'");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("Ollie leads you through the gates into the giant port city, as you pass over a cobblestone bridge upward you get a good look at the peculiar place.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("The docks to the right of you, are filled with ships both giant and small of every variety imaginable. Their crews are comprised of every species you've heard about, and some you haven't.");
+        Fillers.wait(2);
+        System.out.println("The sound of offkey singing you heard before entering the city, becomes clearer as you look left and see a composite struture of inns, vender stalls, and fishing shops.");
+        Fillers.wait(2);
+        System.out.println("The inns are full of sailors, drinking, laughing, singing, gambling. Ollie notices your distraction upon taking in the scene and gestures you to continue following.");
+        Fillers.wait(2);
+        System.out.println("The two of you head down an alleyway, then a smaller path between storehouses, the sounds from the inn are growing fainter.");
+        Fillers.wait(2);
+        System.out.println("'We are almost there now.' Ollie turns back lookign at you.");
+        Fillers.wait(2);
+        System.out.println("After climbing a wooden staircase you are looking out on a wooden plank canopy hanging above the city. Sitting on top of the canopy are small lodgings.");
+        Fillers.wait(2);
+        System.out.println("Every building has a tarp streched between it and the next adjecent, the canopy is both shady and calm because of this unlike the busy port below.");
+        Fillers.wait(2);
+        System.out.println("'Here we are.' Ollie stops in front of one of the apartments.");
+        Fillers.wait(1);
+        System.out.println("\n\tPress ENTER to continue...");
+        scan.nextLine();
+
 
           if (hatchling.getSpecies().equals("Shara Ishvalda")) {
             uFPNLeader(hatchling);
