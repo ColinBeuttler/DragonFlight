@@ -89,7 +89,7 @@ public class SkyFortress {
         System.out.println(
                 "You continue to be lead down many passage ways, right then left and right again until you come to a door that is much larger than any of the previous you passed.");
         Fillers.wait(2);
-        System.out.println("'Here we are finally, let's head inside...'");
+        System.out.println("'Here we are, ready to head inside?'");
         Fillers.wait(1);
         System.out.println("\n\tPress ENTER to continue...");
         scan.nextLine();
@@ -126,9 +126,12 @@ public class SkyFortress {
         Fillers.wait(2);
         System.out.println("Poppy has on a bright orange flightsuit with white and blue stripes running down each side and across the front.");
         Fillers.wait(2);
-        System.out.println("'Like the suit? That's the first order of business, you're gonna have to get your own if you want to ride a dragon...");
+        System.out.println("'Like the suit? That's our first order of business, you're gonna have to get your own if you want to ride a dragon...");
         Fillers.wait(2);
-        System.out.println("you will need to see the tailor for fitting and such, he will back the way you came in the market.'");
+        System.out.println(
+                "you will need to see the tailor for fitting and such, he will back the way you came in the market.'");
+        Fillers.wait(2);
+        System.out.println("'Gilly knows the way.' she motions to Gilly who nods in acknowledgement.");
         Fillers.wait(2);
         System.out.println("'I have one question for you though...");
         Fillers.wait(2);
@@ -140,7 +143,7 @@ public class SkyFortress {
         String dragonName = scan.nextLine();
         NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
 
-        System.out.println("'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
+        System.out.println("'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back here.'");
                 Fillers.wait(2);
                 System.out.println("'Now go see that tailor, I will be in contact.'");
                 Fillers.wait(2);
@@ -154,33 +157,40 @@ public class SkyFortress {
     }
     
     public static void cyberElvesLeader(Dragon hatchling) {
-        System.out.println("");
+        System.out.println("The room before you seems to be a lounge of some kind, the walls are white and totally smooth.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("There is a bar on one side of the room and a sunken conversation area with red seating all the way around, ");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("soft light is coming from the walls and windows stretching along the wall opposite to you.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("Gilly leads you through another door and then a hallway and then yet another hallway until you come to what appears to be a manager's back office.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("You setp inside, to find a small room separated by a large colored glass wall, on one side is a small but very tidy bed.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("On the other larger side, there is a single glass table with three benches, one on each side except the side adjecnt the only window in the room.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("The walls are balck and featureless, sitting at the bench agaisnt the glass wall is a tall figure smoking a cigarette.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("As you enter, the figure truns her head, she has a narrow elven face with pale green skin, a visor covers the top half of her face.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("Her eyes glowing through the transparent visor, resembling two pink embers, a horn sticking out of the helmet on either side of her head.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("She grins as you enter, as she does her purple lips grip her cigarette tighter exposing her pointed canines.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'Welcome, come please sit down here' her voice travels across the room with a smooth effortlessness.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("As you walk over and sit down you notice she is wearing a form fitting black flight suit with a cut-off fur linned jacket on top.");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("'I'm Xopa, chief commander of the Xeno Tribe, I like to personally meet new riders to help them take their first steps...'");
         Fillers.wait(2);
-        System.out.println("'I have one question for you though...");
+        System.out.println("'So first steps... you're gonna need a flight suit like mine, that withstand the intensity of a wormhole...'");
+        Fillers.wait(2);
+        System.out.println("'There's a tailor back in the market the way you came, he and I have a professional arrangement, he will be able to make what you need.'");
+        Fillers.wait(2);
+        System.out.println("'Gilly will be able to show you the way.' she smiles at Gilly who salutes nods in agreement.");
+        Fillers.wait(2);
+        
+        System.out.println("'I do have one question for you though...");
         Fillers.wait(2);
         System.out.println("Have you named your dragon yet?'");
         Fillers.wait(2);
