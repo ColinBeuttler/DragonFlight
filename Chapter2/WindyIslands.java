@@ -78,32 +78,32 @@ public class WindyIslands {
         scan.nextLine();
          
         // After pressing ENTER the encounter with the tribe leader is initiated..
-        
-        System.out.println("\n\t");
+
+        System.out.println("\n\tDespite the outward appearence, the interior is quite well kempt.");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\tA tidy bed on one side, bookshelves and cooking supplies on the other, the walls are covered in harpoons and fishing supplies.");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\tA small cast iron stove is in the center with a wooden table the wraps around nearly the entirety of it.");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\tBehind a large wooden desk, a tall creature sits reading, he looks up as you enter. ");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\tHis face is long and gaunt, his features lay flat against his face, his skin is a light green color on his face with a reddish hue around the gills lining his neck.");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\tRows of tentacle-like appendages lined th etop his his head, every single one appeared to be pulled back tight against his skull.");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\t'Hello, sorry I wasn't expecting anyone, my name is Jhimas. I am the Elder of the Anglers dragon tribe.' ");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\t'I can see from the dragon, that you came here for riding training. I hope you are ready for the journey this road involves.'");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\t'Anyway, first things first, you will need a suit that can withstand lightning strikes and torrential rains. Liek the one I have on.'");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\tYou notice he is wearing a suit that appears to made of a rubbery skin of a dolphin, parts of the outer matieral seem woven and other bits are baggy and ruffled.");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\t'I have a good relationship with the tailor in this city, he will need to get your measurements. Ollie, do you mind leading the way?'");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\tOllie nods in agreement with Jhimas.");
         Fillers.wait(2);
-        System.out.println("\n\t");
+        System.out.println("\n\t'Payment shouldn't be an issue, however materials for such a suit are rare, so he may ask you to gather them for him.'");
         Fillers.wait(2);
         System.out.println("\n\t'I have one question for you though...");
         Fillers.wait(2);
@@ -115,7 +115,7 @@ public class WindyIslands {
         String dragonName = scan.nextLine();
         NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
 
-        System.out.println("\n\t'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
+        System.out.println("\n\t'One last thing, take this.' He hands you a watch. 'Keep it on, I will contact you with this to save you the trip back.'");
                 Fillers.wait(2);
                 System.out.println("\n\t'Now go see that tailor, I will be in contact.'");
                 Fillers.wait(2);
