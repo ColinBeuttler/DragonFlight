@@ -40,145 +40,92 @@ public class WindyIslands {
         Fillers.wait(2);
  
         Fillers.wait(2);
-        System.out.println("As he lowers himself off the wall with a tail covered in wispy white hair, you notice he is carrying a samll curved sword.");
+        System.out.println("\n\tAs he lowers himself off the wall with a tail covered in wispy white hair, you notice he is carrying a samll curved sword.");
         Fillers.wait(2);
-        System.out.println("He falls the last few meters landing on all fours. He strightens up revealing ragged clothes including a numerously mended vest and baker's boy cap.");
+        System.out.println("\n\tHe falls the last few meters landing on all fours. He strightens up revealing ragged clothes including a numerously mended vest and baker's boy cap.");
         Fillers.wait(2);
-        System.out.println("His face was wide with red eyes spread appart by a wide flat nose. Small pointed teeth lined the top and bottom of a smile that extended ear to ear.");
+        System.out.println("\n\tHis face was wide with red eyes spread appart by a wide flat nose. Small pointed teeth lined the top and bottom of a smile that extended ear to ear.");
         Fillers.wait(2);
-        System.out.println("The white wispy hair that was on his tail covered most of the rest of him except his face and the bottom edge and tips of his long jagged ears.");
+        System.out.println("\n\tThe white wispy hair that was on his tail covered most of the rest of him except his face and the bottom edge and tips of his long jagged ears.");
         Fillers.wait(2);
-        System.out.println("'Hello there', the goblin extends his paw.");
+        System.out.println("\n\t'Hello there', the goblin extends his paw.");
         Fillers.wait(2);
-        System.out.println("'Name's Ollie, I'm the resident greeter here, what brings you to this corner of the world?'");
+        System.out.println("\n\t'Name's Ollie, I'm the resident greeter here, what brings you to this corner of the world?'");
         Fillers.wait(2);
-        System.out.println("Before you can answer, the newly hatched dragon makes an appearance from within your jacket.");
+        System.out.println("\n\tBefore you can answer, the newly hatched dragon makes an appearance from within your jacket.");
         Fillers.wait(2);
-        System.out.println("'Oi!! Haven't seen one of those in some time. I can take you where you need to go, follow me.'");
+        System.out.println("\n\t'Oi!! Haven't seen one of those in some time. I can take you where you need to go, follow me.'");
         Fillers.wait(2);
-        System.out.println("Ollie leads you through the gates into the giant port city, as you pass over a cobblestone bridge upward you get a good look at the peculiar place.");
+        System.out.println("\n\tOllie leads you through the gates into the giant port city, as you pass over a cobblestone bridge upward you get a good look at the peculiar place.");
         Fillers.wait(2);
-        System.out.println("The docks to the right of you, are filled with ships both giant and small of every variety imaginable. Their crews are comprised of every species you've heard about, and some you haven't.");
+        System.out.println("\n\tThe docks to the right of you, are filled with ships both giant and small of every variety imaginable. Their crews are comprised of every species you've heard about, and some you haven't.");
         Fillers.wait(2);
-        System.out.println("The sound of offkey singing you heard before entering the city, becomes clearer as you look left and see a composite struture of inns, vender stalls, and fishing shops.");
+        System.out.println("\n\tThe sound of offkey singing you heard before entering the city, becomes clearer as you look left and see a composite struture of inns, vender stalls, and fishing shops.");
         Fillers.wait(2);
-        System.out.println("The inns are full of sailors, drinking, laughing, singing, gambling. Ollie notices your distraction upon taking in the scene and gestures you to continue following.");
+        System.out.println("\n\tThe inns are full of sailors, drinking, laughing, singing, gambling. Ollie notices your distraction upon taking in the scene and gestures you to continue following.");
         Fillers.wait(2);
-        System.out.println("The two of you head down an alleyway, then a smaller path between storehouses, the sounds from the inn are growing fainter.");
+        System.out.println("\n\tThe two of you head down an alleyway, then a smaller path between storehouses, the sounds from the inn are growing fainter.");
         Fillers.wait(2);
-        System.out.println("'We are almost there now.' Ollie turns back lookign at you.");
+        System.out.println("\n\t'We are almost there now.' Ollie turns back lookign at you.");
         Fillers.wait(2);
-        System.out.println("After climbing a wooden staircase you are looking out on a wooden plank canopy hanging above the city. Sitting on top of the canopy are small lodgings.");
+        System.out.println("\n\tAfter climbing a wooden staircase you are looking out on a wooden plank canopy hanging above the city. Sitting on top of the canopy are small lodgings.");
         Fillers.wait(2);
-        System.out.println("Every building has a tarp streched between it and the next adjecent, the canopy is both shady and calm because of this unlike the busy port below.");
+        System.out.println("\n\tEvery building has a tarp streched between it and the next adjecent, the canopy is both shady and calm because of this unlike the busy port below.");
         Fillers.wait(2);
-        System.out.println("'Here we are.' Ollie stops in front of one of the apartments.");
+        System.out.println("\n\t'Here we are.' Ollie stops in front of one of the apartments.");
         Fillers.wait(1);
         System.out.println("\n\tPress ENTER to continue...");
         scan.nextLine();
 
-
-          if (hatchling.getSpecies().equals("Shara Ishvalda")) {
-            uFPNLeader(hatchling);
-        }
-
-        else if (hatchling.getSpecies().equals("Namielle")) {
-            anglersLeader(hatchling);
-        }
+        anglersLeader(hatchling);
+         
     }
 
-    public static void uFPNLeader(Dragon hatchling) {
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("");
-        Fillers.wait(2);
-        System.out.println("'I have one question for you though...");
-        Fillers.wait(2);
-        System.out.println("Have you named your dragon yet?'");
-        Fillers.wait(2);
-        System.out.println("Enter a name for your dragon.");
 
-        // pick the dragons name, this will later become the new namedDragon object
-        String dragonName = scan.nextLine();
-        NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
-
-        System.out.println("'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
-                Fillers.wait(2);
-                System.out.println("'Now go see that tailor, I will be in contact.'");
-                Fillers.wait(2);
-
-        System.out.println("Press ENTER to continue....");
-        scan.nextLine();
-
-        // initiate the diaglogue wiht the tailor in order to get your flightsuit
-        TheTailor.tailorDialogue(dragon);
-    }
 
     public static void anglersLeader(Dragon hatchling) {
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("");
+        System.out.println("\n\t");
         Fillers.wait(2);
-        System.out.println("'I have one question for you though...");
+        System.out.println("\n\t'I have one question for you though...");
         Fillers.wait(2);
-        System.out.println("Have you named your dragon yet?'");
+        System.out.println("\n\tHave you named your dragon yet?'");
         Fillers.wait(2);
-        System.out.println("Enter a name for your dragon.");
+        System.out.println("\n\tEnter a name for your dragon.");
 
         // pick the dragons name, this will later become the new namedDragon object
         String dragonName = scan.nextLine();
         NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
 
-        System.out.println("'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
+        System.out.println("\n\t'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
                 Fillers.wait(2);
-                System.out.println("'Now go see that tailor, I will be in contact.'");
+                System.out.println("\n\t'Now go see that tailor, I will be in contact.'");
                 Fillers.wait(2);
 
-        System.out.println("Press ENTER to continue....");
+        System.out.println("\n\tPress ENTER to continue....");
         scan.nextLine();
 
         // initiate the diaglogue wiht the tailor in order to get your flightsuit

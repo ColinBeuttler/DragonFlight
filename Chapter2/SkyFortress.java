@@ -15,7 +15,7 @@ public class SkyFortress {
     
     public static void localeIntro(Dragon hatchling) {
         // intro to location - description of new location
-        System.out.println("\n\tYou look ou tinto a giant black horizon...");
+        System.out.println("\n\tYou look out into a giant black horizon...");
         Fillers.wait(2);
         System.out.println(
                 "\n\tits seems that you are on the edge of space, you can see the stars more clearly than ever before.");
@@ -118,20 +118,20 @@ public class SkyFortress {
         Fillers.wait(2);
         System.out.println("Most of the room is being taken up by a large cubicle, covered in stickers, models, and pictures of dragons and their riders.");
         Fillers.wait(2);
-        System.out.println("'Salutaions newcomer' says a female voice from behind the cubicle, then out walks another individual.");
+        System.out.println("'Salutaions newcomer' says a female voice from behind the cubicle, then out walks another child sized creature.");
         Fillers.wait(2);
-        System.out.println("She has similar size and features to Gilly, although has an older and more attentive face");
+        System.out.println("She has a similar build and features to Gilly, although has an older and more attentive face.");
         Fillers.wait(2);
         System.out.println("'Friends call me Poppy, I'm the current commander of the Cyber Children dragon tribe.'");
         Fillers.wait(2);
-        System.out.println("Poppy has on a bright orange flightsuit with white and blue stripes running down each side and across the front.");
+        System.out.println("Poppy has on a bright orange flightsuit with white and blue stripes running down each side and across the front. She notices as you eye the suit.");
         Fillers.wait(2);
         System.out.println("'Like the suit? That's our first order of business, you're gonna have to get your own if you want to ride a dragon...");
         Fillers.wait(2);
         System.out.println(
-                "you will need to see the tailor for fitting and such, he will back the way you came in the market.'");
+                "you will need to see the tailor for fitting and such, he will back the way you came in the market, Gilly knows the way.'");
         Fillers.wait(2);
-        System.out.println("'Gilly knows the way.' she motions to Gilly who nods in acknowledgement.");
+        System.out.println("She motions to Gilly who nods in acknowledgement.");
         Fillers.wait(2);
         System.out.println("'I have one question for you though...");
         Fillers.wait(2);
@@ -143,9 +143,9 @@ public class SkyFortress {
         String dragonName = scan.nextLine();
         NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
 
-        System.out.println("'One last thing, take this.' She hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back here.'");
+        System.out.println("'One last thing, take this.' She hands you a watch. 'Keep it on, so I can contact you without having to make a trip back here.'");
                 Fillers.wait(2);
-                System.out.println("'Now go see that tailor, I will be in contact.'");
+                System.out.println("'Now go see that tailor, I will be in touch.'");
                 Fillers.wait(2);
 
         System.out.println("Press ENTER to continue....");
@@ -165,13 +165,13 @@ public class SkyFortress {
         Fillers.wait(2);
         System.out.println("Gilly leads you through another door and then a hallway and then yet another hallway until you come to what appears to be a manager's back office.");
         Fillers.wait(2);
-        System.out.println("You setp inside, to find a small room separated by a large colored glass wall, on one side is a small but very tidy bed.");
+        System.out.println("You setp inside, to find a small room separated by a large colored glass panel, on one side is a small but very tidy bed,");
         Fillers.wait(2);
-        System.out.println("On the other larger side, there is a single glass table with three benches, one on each side except the side adjecnt the only window in the room.");
+        System.out.println("on the other, there is a single glass table with three benches, one on each side except the side adjecnt the only window in the room.");
         Fillers.wait(2);
-        System.out.println("The walls are balck and featureless, sitting at the bench agaisnt the glass wall is a tall figure smoking a cigarette.");
+        System.out.println("The walls are grey and featureless, sitting at the bench agaisnt the glass wall is a tall figure smoking a cigarette.");
         Fillers.wait(2);
-        System.out.println("As you enter, the figure truns her head, she has a narrow elven face with pale green skin, a visor covers the top half of her face.");
+        System.out.println("As you enter, the figure turns her head, she has a narrow elven face with pale green skin, a visor covers the top half of her face.");
         Fillers.wait(2);
         System.out.println("Her eyes glowing through the transparent visor, resembling two pink embers, a horn sticking out of the helmet on either side of her head.");
         Fillers.wait(2);
