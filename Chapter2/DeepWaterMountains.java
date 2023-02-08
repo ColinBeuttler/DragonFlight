@@ -79,134 +79,62 @@ public class DeepWaterMountains {
         System.out.println("\n\tPress ENTER to continue...");
         scan.nextLine();
 
+        // After pressing ENTER the encounter with the tribe leader is initiated..
 
-          if (hatchling.getSpecies().equals("Gogmazios")) {
-            deepWaterGnomesLeader(hatchling);
-        }
 
-        else if (hatchling.getSpecies().equals("Malzena")) {
-            caveGoblinLeader(hatchling);
-        }
-    }
-
-    public static void deepWaterGnomesLeader(Dragon hatchling) {
-        System.out.println("Berdi leads you deeper into the city within the cave, down roads paved with stone all neatly layed and worm smoooth.");
+        System.out.println("\n\tBerdi leads you deeper into the city within the cave, down roads paved with stone all neatly layed and worm smoooth.");
         Fillers.wait(2);
-        System.out.println("One road leads to another and yet another, until you arrive at a large cathedral-esque structure in the heart of the city.");
+        System.out.println("\n\tOne road leads to another and yet another, until you arrive at a large cathedral-esque structure in the heart of the city.");
         Fillers.wait(2);
-        System.out.println("You both enter through giant colored glass doors that opens up into a enormous dinning hall.");
+        System.out.println("\n\tYou both enter through giant colored glass doors that opens up into a enormous dinning hall.");
         Fillers.wait(2);
-        System.out.println("After a few more doors, the two of you arrive in a small room carved driectly from the stone, ceiling high pillars line the walls.");
+        System.out.println("\n\tAfter a few more doors, the two of you arrive in a small room carved driectly from the stone, ceiling high pillars line the walls.");
         Fillers.wait(2);
-        System.out.println("In the opposite side is a large roaring fireplace, in front of the flame is a small outline of a gnome standing, staring into the distance.");
+        System.out.println("\n\tIn the opposite side is a large roaring fireplace, in front of the flame is a small outline of a gnome standing, staring into the distance.");
         Fillers.wait(2);
-        System.out.println("He doesn't hear the two of you enter immediately until you get close enough to get a good look at him.");
+        System.out.println("\n\tHe doesn't hear the two of you enter immediately until you get close enough to get a good look at him.");
         Fillers.wait(2);
-        System.out.println("His head is the same pale color as Berdi's but is totally void of hair. Instead it is lined with horizontal wrinkles and vertical charcoal colored tattoos.");
+        System.out.println("\n\tHis head is the same pale color as Berdi's but is totally void of hair. Instead it is lined with horizontal wrinkles and vertical charcoal colored tattoos.");
         Fillers.wait(2);
-        System.out.println("As he turns around you can see the tattoos stop at a thick heavy brow. His small white eyes flicker and squint in your direction.");
+        System.out.println("\n\tAs he turns around you can see the tattoos stop at a thick heavy brow. His small white eyes flicker and squint in your direction.");
         Fillers.wait(2);
-        System.out.println("'Well Hello, so nice to see a new face' his voice surprisingly deep for his not even a full meter stature.");
+        System.out.println("\n\t'Well Hello, so nice to see a new face' his voice surprisingly deep for his not even a full meter stature.");
         Fillers.wait(2);
-        System.out.println("'Name's Dhommos, current presiding president of the DeepHolm Gnomes Tribe. There is only one reason a human would travel this far.'");
+        System.out.println("\n\t'Name's Dhommos, current presiding president of the DeepHolm Gnomes Tribe. There is only one reason a human would travel this far.'");
         Fillers.wait(2);
-        System.out.println("'So I'm guessing you've acquired a hatchling and need our guidance...' He laughs and smiles");
+        System.out.println("\n\t'So I'm guessing you've acquired a hatchling and need our guidance...' He laughs and smiles");
         Fillers.wait(2);
-        System.out.println("'Well if you're going to join us you will need to look like one of us, clearly someone of your vertical proporations has only one option...'");
+        System.out.println("\n\t'Well if you're going to join us you will need to look like one of us, clearly someone of your vertical proporations has only one option...'");
         Fillers.wait(2);
-        System.out.println("You're gonna have to wear our armor, you're gonna need it when you start learning to ride anyway.'");
+        System.out.println("\n\tYou're gonna have to wear our armor, you're gonna need it when you start learning to ride anyway.'");
         Fillers.wait(2);
-        System.out.println("'Since Gnome sizes only get so big, the tailor will have to make it for you, his shop is back the way you came.'");
+        System.out.println("\n\t'Since Gnome sizes only get so big, the tailor will have to make it for you, his shop is back the way you came.'");
         Fillers.wait(2);
-        System.out.println("'He happens to be an old friend, we have an arrangement so you don't need to worry about payment at the moment, just tell him I sent ya.'");
+        System.out.println("\n\t'He happens to be an old friend, we have an arrangement so you don't need to worry about payment at the moment, just tell him I sent ya.'");
         Fillers.wait(2);
-        System.out.println("'The Dragon should be a dead giveaway though, Berdi will lead you there...'");
+        System.out.println("\n\t'The Dragon should be a dead giveaway though, Berdi will lead you there...'");
         Fillers.wait(2);
-        System.out.println("'I have one question for you though...");
+        System.out.println("\n\t'I have one question for you though...");
         Fillers.wait(2);
-        System.out.println("Have you named your dragon yet?'");
+        System.out.println("\n\tHave you named your dragon yet?'");
         Fillers.wait(2);
-        System.out.println("Enter a name for your dragon.");
+        System.out.println("\n\tEnter a name for your dragon.");
 
         // pick the dragons name, this will later become the new namedDragon object
         String dragonName = scan.nextLine();
         NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
 
         System.out.println(
-                "'One last thing, take this.' He hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
+                "\n\t'One last thing, take this.' He hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back over here.'");
         Fillers.wait(2);
-        System.out.println("'Now go see that tailor, I will be in contact.'");
+        System.out.println("\n\t'Now go see that tailor, I will be in contact.'");
         Fillers.wait(2);
 
-        System.out.println("Press ENTER to continue....");
+        System.out.println("\n\tPress ENTER to continue....");
         scan.nextLine();
 
         // initiate the diaglogue wiht the tailor in order to get your flightsuit
         TheTailor.tailorDialogue(dragon);
-    }
-    
-
-
-    public static void caveGoblinLeader(Dragon hatchling) {
-        System.out.println(
-                "Berdi leads you thorugh the city until you come to a large stalagmite with windows carved into its sides.");
-        Fillers.wait(2);
-        System.out.println(
-                "She leads you up the spiral staircase carved into the rock until you arrive at a giant stainglass doorway.");
-        Fillers.wait(2);
-        System.out.println(
-                "The two of you enter the stalagmite into a room with a fireplace and giant stone columns reachign to the ceiling, all the furnitrue is covered in furs.");
-        Fillers.wait(2);
-        System.out.println(
-                "you are led up another staircase within the structure, until you find yourself standing in front of a small stone door.");
-        Fillers.wait(2);
-        System.out.println(
-                "You both walk through the door, you are standing within an office, bookshelves on either side of you, a large rug covering the stone floor.");
-        Fillers.wait(2);
-        System.out.println(
-                "'Excuse the mess, I was expecting company,' a raspy voice says as a tall pale goblin stands up from behind a large wooden desk.");
-        Fillers.wait(2);
-        System.out.println(
-                "His eyes are dark and widely spaced on a slim, angular face. His ears are long, broad at the base and end in sharp points, resembling those of a bat's.");
-        Fillers.wait(2);
-        System.out.println(
-                "Both of his giant ears are pierced multiple times along the bottom edge, his flat triangular nose had a large gold ring through the center.");
-        Fillers.wait(2);
-        System.out.println(
-                "'My name is Gnax, I'm the elder of the cave Goblin Dragon Tribe. And you have already met Berdi...' He turns to Berdi and smiles.");
-        Fillers.wait(2);
-        System.out.println(
-                "'So let's get started you have a lot of work ahead of you, first you will need to get a riding suit, and I doubt we have a spare suit that would fit a human.'");
-        Fillers.wait(2);
-        System.out.println(
-                "'There is a tailor in DeepHolm within the market district, we have a deal with the tailor there, he makes all our suits, he will be able to help you out.'");
-        Fillers.wait(2);
-        System.out.println(
-                "'Don't worry about paying, we have a business account with him the covers expenses for new recruits. Although he may ask for the materials for your suit.'");
-        Fillers.wait(2);
-        System.out.println("'Berdi, can you lead our friend back to the market?' Berdi nods.");
-        Fillers.wait(2);
-        System.out.println("'I have one question for you though...");
-        Fillers.wait(2);
-        System.out.println("Have you named your dragon yet?'");
-        Fillers.wait(2);
-        System.out.println("Enter a name for your dragon.");
-
-        // pick the dragons name, this will later become the new namedDragon object
-        String dragonName = scan.nextLine();
-        NamedDragon dragon = NamedDragon.creatNamedDragon(hatchling, dragonName);
-
-        System.out.println(
-                "'One last thing, take this.' He hands you a watch. 'Keep it on, I will contact you with the next instructions to save you the trip back up here.'");
-        Fillers.wait(2);
-        System.out.println("'Now go see that tailor, I will be in contact.'");
-        Fillers.wait(2);
-        System.out.println("Press ENTER to continue....");
-        scan.nextLine();
-
-        // initiate the diaglogue wiht the tailor in order to get your flightsuit
-        TheTailor.tailorDialogue(dragon);
-
     }
 
 }

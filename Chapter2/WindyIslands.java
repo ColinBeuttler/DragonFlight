@@ -76,14 +76,9 @@ public class WindyIslands {
         Fillers.wait(1);
         System.out.println("\n\tPress ENTER to continue...");
         scan.nextLine();
-
-        anglersLeader(hatchling);
          
-    }
-
-
-
-    public static void anglersLeader(Dragon hatchling) {
+        // After pressing ENTER the encounter with the tribe leader is initiated..
+        
         System.out.println("\n\t");
         Fillers.wait(2);
         System.out.println("\n\t");
