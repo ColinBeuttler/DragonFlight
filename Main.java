@@ -214,7 +214,7 @@ public class Main {
                 DeepWaterMountains.localeIntro(dragonHatchling);
             }
             else if (dragonHatchling.getOrigin().equals("Windy Islands")) {
-                WindyIslands.localeIntro();
+                WindyIslands.localeIntro(dragonHatchling);
             }
 
 
