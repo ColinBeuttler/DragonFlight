@@ -44,4 +44,7 @@ public class Materials {
         this.specailty = specailty;
     }
 
+    public String toString() {
+        return "\n\tMaterial List: \n" + this.primary + "\n" + this.secondary + "\n" + this.specailty;
+    }
 }
