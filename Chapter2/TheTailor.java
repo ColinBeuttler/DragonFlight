@@ -75,10 +75,10 @@ public class TheTailor {
 
             Materials materialList;
 
-            if (dragon.getSpecies().equals("Xeno")) {
-                    materialList = new Materials("fabric", "wool", "Pyrex");
+        if (dragon.getSpecies().equals("Xeno")) {
+                materialList = new Materials("fabric", "wool", "Pyrex");
                                 
-            } else if (dragon.getSpecies().equals("Nami")) {
+        } else if (dragon.getSpecies().equals("Nami")) {
                 materialList = new Materials("fabric", "wool", "Pyrex");
                
         } else if (dragon.getSpecies().equals("Goggy")) {
